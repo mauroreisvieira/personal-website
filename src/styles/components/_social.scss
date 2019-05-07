@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    padding: .5rem;
+    height: 100%;
+    display: flex;
+    color: var(--color-grayscale-light);
+
+    svg {
+      width: 1.125rem;
+      height: 100%;
+      fill: currentColor;
+    }
+
+    &:hover {
+      color: var(--color-primary-base);
+    }
+  }
+}

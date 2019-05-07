@@ -1,0 +1,16 @@
+code {
+  display: inline-block;
+  background-color: var(--color-accent-lighter);
+  border-radius: var(--radius-xs);
+  font-size: var(--typography-x-sm);
+  line-height: 1;
+  white-space: nowrap;
+  color: var(--color-accent-base);
+  padding: var(--space-xs) var(--space-x-sm);
+  font-family: monospace;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  padding: 0;
+}

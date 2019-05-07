@@ -1,0 +1,12 @@
+blockquote {
+  border: 0 solid var(--color-info-base);
+  background-color: var(--color-info-lighter);
+  color: var(--color-info-darker);
+  border-left-width: 4px;
+  margin: var(--space-lg) 0;
+  padding: var(--space-md) var(--space-lg);
+
+  p {
+    margin: 0;
+  }
+}

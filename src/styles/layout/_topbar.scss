@@ -1,0 +1,9 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-lg) 0 var(--space-x-hg);
+
+  @include breakpoint {
+    display: none;
+  }
+}
