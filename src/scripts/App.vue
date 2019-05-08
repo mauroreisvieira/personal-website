@@ -1,33 +1,21 @@
 <template>
     <div class="app">
-        <topbar logo="./assets/images/logo.png" />
-        <main class="main" @click="hideSidebar">
-            <div class="container">
-                <sidebar />
-                <router-view :key="$route.fullPath"/>
-            </div>
-        </main>
+        <Header />
+        <router-view :key="$route.fullPath"/>
+        <Footer />
     </div>
 </template>
 
 <script>
-    import topbar from './layout/topbar.vue'
-    import sidebar from './layout/sidebar.vue'
+    import Header from './layout/Header.vue'
+    import Footer from './layout/Footer.vue'
 
     export default {
         name: 'app',
-        components: { topbar, sidebar },
+        components: { Header, Footer },
         data: function () {
             return {
                 theme: this.$store.state.theme,
-            }
-        },
-        methods: {
-            hideSidebar(ev) {
-                const sidebar = document.querySelector('.sidebar');
-                const article = document.querySelector('.article');
-                sidebar.classList.remove('is-visible');
-                article.classList.remove('is-overlay');
             }
         },
         mounted() {

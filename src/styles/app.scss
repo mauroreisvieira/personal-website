@@ -15,14 +15,13 @@
 
 // Layout
 @import "layout/header";
-@import "layout/topbar";
-@import "layout/main";
-@import "layout/sidebar";
+@import "layout/navigation";
+@import "layout/footer";
 @import "layout/article";
 
 // Component
-@import "components/hljs";
+@import "components/hero";
+@import "components/prismjs";
 @import "components/social";
 @import "components/code";
 @import "components/blockquote";
-@import "components/search";

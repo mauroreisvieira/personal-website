@@ -1,28 +1,46 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import pages from '../pages/pages.vue'
-import { store } from '../store/store';
+import Vue from "vue";
+import Router from "vue-router";
 
-Vue.use(Router)
+import Home from "../Pages/Home.vue";
+import About from "../Pages/About.vue";
+import Blog from "../Pages/Blog.vue";
+import Article from "../Pages/Article.vue";
 
-const routes = [];
-store.state.menus.map(menu => {
-    menu.menus.map(link => {
-        routes.push({
-            path: link.url,
-            name: link.title,
-            component: pages,
-            meta: link.meta,
-            demo: link.demo
-        })
-    })
-});
+import { store } from "../store/store";
+Vue.use(Router);
+
+const routes = [
+    {
+        path: "/",
+        name: "Home",
+        component: Home,
+        meta: {
+            description: ""
+        }
+    },
+    {
+        path: "/about",
+        name: "About",
+        component: About,
+        meta: {
+            description: ""
+        }
+    },
+    {
+        path: "/blog",
+        name: "Blog",
+        component: Blog,
+        meta: {
+            description: ""
+        }
+    }
+];
 
 export default new Router({
     scrollBehavior() {
         return { x: 0, y: 0 };
     },
-    routes,
-    mode: 'history'
-})
-
+    linkActiveClass: "active",
+    linkExactActiveClass: "exact-active",
+    routes
+});

@@ -8,19 +8,6 @@ export const store = new Vuex.Store({
             appName: "Mauro Reis Vieira",
             search: false
         },
-        menus: [
-            {
-                menus: [
-                    {
-                        url: "/blog/introduction",
-                        title: "Blog",
-                        meta: {
-                            description: ""
-                        }
-                    }
-                ]
-            }
-        ],
         algolia: {
             applicationID: "UJM78II4VW",
             apiKey: "f2f3806e8814c4cc3835a6929dc6b43c",
@@ -28,8 +15,8 @@ export const store = new Vuex.Store({
         },
         social: {
             twitter: "https://twitter.com/mauroreisvieira",
-            github: "https://github.com/mauroreisvieira/me",
-            linkedin: false
+            github: "https://github.com/mauroreisvieira/mauroreisvieira",
+            linkedin: "https://www.linkedin.com/in/mauro-reis-vieira-a752928b/"
         }
     }
 });
