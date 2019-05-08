@@ -1,0 +1,16 @@
+.navigation {
+    display: inline-flex;
+    justify-content: space-between;
+
+    &__item {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        &.exact-active {
+            color: var(--color-accent-base);
+        }
+    }
+}
