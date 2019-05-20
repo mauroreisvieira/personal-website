@@ -1,11 +1,11 @@
 @import "variables";
 
 // Theme
-@import "./../../node_modules/stewed/src/theme/index";
-@import "./../../node_modules/stewed/src/variables";
+@import "./../../node_modules/stewed/src/packages/theme/index";
+@import "./../../node_modules/stewed/src/packages/variables";
 
 // Global
-@import "./../../node_modules/stewed/src/global";
+@import "./../../node_modules/stewed/src/packages/global";
 
 // Components
-@import "./../../node_modules/stewed/src/components/typography/index";
+@import "./../../node_modules/stewed/src/packages/typography/index";

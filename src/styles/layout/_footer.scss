@@ -2,10 +2,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-x-hg);
-  margin-top: var(--space-x-hg);
+  margin-top: calc(var(--space-x-hg) * 2);
 
   p {
+    margin-bottom: 0;
     color: var(--color-grayscale-light);
   }
 }

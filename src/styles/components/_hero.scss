@@ -1,8 +1,13 @@
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 60vh;
+
+  padding: var(--space-sm);
+
+  @include tablet {
     padding: var(--space-x-hg);
+  }
 }

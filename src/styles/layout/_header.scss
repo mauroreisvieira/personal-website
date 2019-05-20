@@ -2,7 +2,6 @@ header {
   display: grid;
   grid-template-columns: auto;
   align-items: center;
-  padding: var(--space-x-hg);
 
   &:empty {
     display: none;

@@ -9,9 +9,7 @@
     export default {
         components: { Hero },
         data: function () {
-            return {
-                theme: this.$store.state.theme
-            }
+            return {}
         }
     }
 </script>

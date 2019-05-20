@@ -6,7 +6,7 @@
             :key="index"
             :to="menu.path"
             :title="menu.name" >
-            {{ menu.name }}
+            <span>{{ menu.name }}</span>
         </router-link>
     </nav>
 </template>

@@ -8,12 +8,11 @@
   justify-content: center;
 
   &__item {
-    padding: .5rem;
     height: 100%;
     color: var(--color-grayscale-light);
 
     svg {
-      width: 1.125rem;
+      width: var(--typography-sm);
       height: 100%;
       fill: currentColor;
     }

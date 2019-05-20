@@ -1,13 +1,17 @@
-body {
-  padding: var(--space-md);
-  background: var(--color-accent-base);
+.app {
+  min-height: 100vh;
+  background-color: #fff;
+  padding: var(--space-sm);
 
-  .app {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-    background-color: #fff;
+  @include tablet {
+    padding: var(--space-x-hg);
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
   }
 }
+
 

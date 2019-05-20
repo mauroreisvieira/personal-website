@@ -1,10 +1,10 @@
 // Font Size
 $theme-font-family-serif: "Work Sans", sans-serif !default;
 $theme-font-family-monospace: monospace !default;
-$theme-font-size: 18px !default;
+$theme-font-size: 20px !default;
 
 $theme-colors: (
-  "primary"   : #5c8df6,
+  "primary"   : #79567f,
   "accent"    : #f3628d,
   "grayscale" : #454b57,
   "warning"   : #f5c85c,
@@ -59,15 +59,15 @@ $theme-font-weight: (
 ) !default;
 
 $theme-spaces: (
-  "x-hg"  : 60px,
-  "hg"    : 48px,
-  "xl"    : 32px,
-  "lg"    : 22px,
-  "md"    : 16px,
-  "sm"   : 8px,
-  "x-sm" : 6px,
-  "xs"   : 4px,
-  "x-xs" : 2px
+  "x-hg"  : 68px,
+  "hg"    : 52px,
+  "xl"    : 42px,
+  "lg"    : 36px,
+  "md"    : 24px,
+  "sm"   : 18px,
+  "x-sm" : 16px,
+  "xs"   : 12px,
+  "x-xs" : 4px
 ) !default;
 
 $theme-radius: (
