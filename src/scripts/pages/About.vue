@@ -1,9 +1,7 @@
 <template>
     <main class="about">
         <Hero title="About"/>
-        <section class="container">
-            <Page path="/docs/pages/about" />
-        </section>
+        <Page path="/docs/pages/about" />
     </main>
 
 </template>

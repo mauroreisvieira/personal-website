@@ -17,8 +17,10 @@
       fill: currentColor;
     }
 
+    &:focus,
     &:hover {
       color: var(--color-primary-base);
+      outline: none;
     }
   }
 }

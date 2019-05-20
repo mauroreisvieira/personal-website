@@ -8,11 +8,6 @@ export const store = new Vuex.Store({
             appName: "Mauro Reis Vieira",
             search: false
         },
-        algolia: {
-            applicationID: "UJM78II4VW",
-            apiKey: "f2f3806e8814c4cc3835a6929dc6b43c",
-            index: "me_pages"
-        },
         social: {
             twitter: "https://twitter.com/mauroreisvieira/",
             github: "https://github.com/mauroreisvieira/",
