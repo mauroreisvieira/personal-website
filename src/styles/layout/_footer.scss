@@ -1,6 +1,11 @@
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--space-x-hg);
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-x-hg);
+  margin-top: var(--space-x-hg);
+
+  p {
+    color: var(--color-grayscale-light);
+  }
 }

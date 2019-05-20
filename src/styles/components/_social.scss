@@ -4,13 +4,13 @@
   grid-template-rows: 32px;
   grid-gap: 16px;
   align-items: center;
+  align-self: flex-end;
   justify-content: center;
 
   &__item {
     padding: .5rem;
     height: 100%;
     color: var(--color-grayscale-light);
-
 
     svg {
       width: 1.125rem;

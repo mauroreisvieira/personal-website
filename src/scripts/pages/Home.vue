@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="home">
         <Hero title="Mauro Reis Vieira">
             <p>Front End Developer at <a href="https://namecheap.com">Namecheap.com</a></p>
         </Hero>

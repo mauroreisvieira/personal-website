@@ -40,7 +40,7 @@ export default new Router({
     scrollBehavior() {
         return { x: 0, y: 0 };
     },
-    linkActiveClass: "active",
-    linkExactActiveClass: "exact-active",
+    linkActiveClass: "is-active",
+    linkExactActiveClass: "is-exact-active",
     routes
 });

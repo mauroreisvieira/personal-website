@@ -6,6 +6,7 @@
 @import "./../../node_modules/stewed/src/components/textfield/index";
 @import "./../../node_modules/stewed/src/components/menu/index";
 @import "./../../node_modules/stewed/src/components/tag/index";
+@import "./../../node_modules/stewed/src/components/grid/index";
 @import "./../../node_modules/stewed/src/components/table/index";
 @import "./../../node_modules/stewed/src/components/card/index";
 @import "./../../node_modules/stewed/src/components/button/index";
@@ -14,9 +15,11 @@
 @import "utils/mixins";
 
 // Layout
+@import "layout/app";
 @import "layout/header";
 @import "layout/navigation";
 @import "layout/footer";
+@import "layout/main";
 @import "layout/article";
 
 // Component

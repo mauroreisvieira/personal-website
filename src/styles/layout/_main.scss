@@ -1,0 +1,14 @@
+main {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+
+  a {
+    font-size: var(--typography-lg);
+  }
+
+  p {
+    font-size: var(--typography-lg);
+    line-height: var(--typography-x-xl);
+  }
+}

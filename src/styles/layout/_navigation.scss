@@ -8,8 +8,11 @@
         display: block;
         width: 100%;
         text-align: center;
+        text-transform: uppercase;
+        font-weight: var(--typography-medium);
+        font-size: var(--typography-lg);
 
-        &.exact-active {
+        &.is-exact-active {
             color: var(--color-accent-base);
         }
     }

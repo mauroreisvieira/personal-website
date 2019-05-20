@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="blog">
         <Hero title="Blog"/>
     </main>
 </template>
