@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header class="container">
         <Nav />
     </header>
 </template>
@@ -9,9 +9,7 @@
     export default {
         components: { Nav },
         data: function () {
-            return {
-                theme: this.$store.state.theme
-            }
+            return {}
         }
     }
 </script>

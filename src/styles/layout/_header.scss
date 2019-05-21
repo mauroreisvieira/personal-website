@@ -1,6 +1,5 @@
 header {
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
   align-items: center;
 
   &:empty {

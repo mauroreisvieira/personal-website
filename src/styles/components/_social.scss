@@ -1,14 +1,12 @@
 .social {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(32px, auto));
-  grid-template-rows: 32px;
-  grid-gap: 16px;
+  display: flex;
   align-items: center;
   align-self: flex-end;
   justify-content: center;
 
   &__item {
     height: 100%;
+    padding: var(--space-sm);
     color: var(--color-grayscale-light);
 
     svg {
