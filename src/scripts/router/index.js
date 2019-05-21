@@ -1,9 +1,13 @@
 import Vue from "vue";
 import Router from "vue-router";
 
-import Home from "../Pages/Home.vue";
 import About from "../Pages/About.vue";
 import Blog from "../Pages/Blog.vue";
+import Detail from "../Pages/Detail.vue";
+import Home from "../Pages/Home.vue";
+import Page from "../Pages/Page.vue";
+
+import BlogEntries from '../../../blog.json';
 
 import { store } from "../store/store";
 Vue.use(Router);
@@ -34,6 +38,17 @@ const routes = [
         }
     }
 ];
+
+BlogEntries.map(blog => {
+    routes.push({
+        path: blog.path,
+        name: blog.title,
+        component: Detail,
+        meta: {
+            description: blog.description
+        }
+    })
+});
 
 export default new Router({
     // mode: 'history',

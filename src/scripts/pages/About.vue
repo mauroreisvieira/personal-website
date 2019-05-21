@@ -1,5 +1,5 @@
 <template>
-    <main class="about">
+    <main>
         <Hero title="About"/>
         <Page path="/docs/pages/about" />
     </main>

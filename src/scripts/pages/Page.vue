@@ -15,21 +15,21 @@
         },
         props: {
             path: {
-              type: String,
-              required: true
-          }
-      },
-      mounted() {
-        const file = this.path + '.md';
-        const md = new Remarkable({
-            langPrefix: 'hljs language-'
-        });
-        Utils.readFile(file, (responseText) => {
-            this.markdown = md.render(responseText);
-            this.$nextTick(function () {
-                Prism.highlightAll();
+                type: String,
+                required: true
+            }
+        },
+        mounted() {
+            const file = this.path + '.md';
+            const md = new Remarkable({
+                langPrefix: 'hljs language-'
             });
-        });
+            Utils.readFile(file, (responseText) => {
+                this.markdown = md.render(responseText);
+                this.$nextTick(function () {
+                    Prism.highlightAll();
+                });
+            });
+        }
     }
-}
 </script>

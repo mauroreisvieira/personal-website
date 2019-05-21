@@ -1,5 +1,5 @@
 <template>
-    <main class="home">
+    <main>
         <Hero title="Mauro Reis Vieira" />
     </main>
 </template>

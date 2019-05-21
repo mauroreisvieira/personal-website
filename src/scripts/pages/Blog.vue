@@ -1,21 +1,27 @@
 <template>
-    <main class="blog">
+    <main>
         <Hero title="Blog"/>
-        <Article
-            path="what-s-new-in-javascript"
-            title="What’s new in Javascript?"
-            date="20/05/2019" />
+        <Article v-for="(item, index) in list"
+            :key="index"
+            :path="item.path"
+            :title="item.title"
+            :date="item.date" />
     </main>
 </template>
 
 <script>
     import Hero from '../components/Hero.vue'
     import Article from './Article.vue'
+    import BlogEntries from '../../../blog.json';
+
     export default {
         components: { Hero, Article },
         data: function () {
-            return {}
-        }
+            return {
+                list: BlogEntries
+            }
+        },
+        mounted() {}
     }
 </script>
 
