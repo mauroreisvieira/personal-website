@@ -10,10 +10,14 @@
   }
 
   &--blog {
+    flex-direction: column;
     width: 100%;
+    padding-top: var(--space-lg);
     margin-top: var(--space-x-hg);
+    border-top: 1px solid var(--color-grayscale-lighter);
 
     @include tablet {
+      flex-direction: row;
       width: 100%;
     }
   }
@@ -29,9 +33,9 @@
     font-weight: var(--typography-medium);
     font-size: var(--typography-lg);
 
-      @include tablet {
-            font-size: var(--typography-lg);
-      }
+    @include tablet {
+      font-size: var(--typography-lg);
+    }
 
     span {
       position: relative;
@@ -75,16 +79,22 @@
     display: block;
     font-weight: var(--typography-medium);
     font-size: var(--typography-lg);
+    text-align: center;
     cursor: pointer;
   }
 
   &__prev {
     padding-left: 0;
-    text-align: left;
+
+    @include tablet {
+      text-align: left;
+    }
   }
 
   &__next {
     padding-right: 0;
-    text-align: right;
+    @include tablet {
+      text-align: right;
+    }
   }
 }

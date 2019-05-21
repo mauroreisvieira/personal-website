@@ -33,7 +33,7 @@
             return {
                 data: BlogEntries,
                 title: this.$router.currentRoute.name,
-                path: '/docs' + this.$router.currentRoute.path,
+                path: '/docs/blog' + this.$router.currentRoute.path,
                 max: 0,
                 value: 0,
                 date: undefined,

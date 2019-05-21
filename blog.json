@@ -1,13 +1,19 @@
 [
     {
-        "path": "/blog/what-s-new-in-javascript",
+        "path": "/what-s-new-in-javascript",
         "date": "2019-05-21",
         "title": "What’s new in Javascript?",
-        "description": "Many of us know that there is a standard procedure for Javascript’s latest releases and a committee behind that. In this post, I will explain about who makes the final call on any new specification, what is the procedure for it, and what's new in ES2019."
+        "description": "Many of us know that there is a standard procedure for Javascript latest releases and a committee behind that. In this post, I will explain about who makes the final call on any new specification, what is the procedure for it, and what's new in ES2019."
     },
     {
-        "path": "/blog/sublime-text-3-tips",
-        "date": "2019-05-8",
+        "path": "/how-i-work",
+        "date": "2019-05-10",
+        "title": "How I Work",
+        "description": "I’ve seen a few people share their work setups / processes lately, so I thought I would do the same."
+    },
+    {
+        "path": "/sublime-text-3-tips",
+        "date": "2019-04-16",
         "title": "Sublime Text 3 Tips",
         "description": "I've been using Sublime Text 3 for probably four years now and in that time I've discovered tons of useful tricks. I figured I should start writing them down for anyone who might be interested. I'll try to explain the bits that seem esoteric because there are a lot of cool commands which only work in certain contexts."
     }
