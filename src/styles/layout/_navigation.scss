@@ -29,6 +29,10 @@
     font-weight: var(--typography-medium);
     font-size: var(--typography-lg);
 
+      @include tablet {
+            font-size: var(--typography-lg);
+      }
+
     span {
       position: relative;
       z-index: 1;

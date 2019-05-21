@@ -8,14 +8,14 @@
             v-if="prev || next"
             class="navigation navigation--blog"
             role="navigation">
-            <a
+            <router-link
                 v-if="prev >= 0 && prev < data.length"
-                :href="data[prev].path"
-                class="navigation__prev">⇦ {{ data[prev].title }}</a>
-            <a
+                :to="data[prev].path"
+                class="navigation__prev">⇦ {{ data[prev].title }}</router-link>
+            <router-link
                 v-if="next >= 0 && next < data.length"
-                :href="data[next].path"
-                class="navigation__next">{{ data[next].title }} ⇨</a>
+                :to="data[next].path"
+                class="navigation__next">{{ data[next].title }} ⇨</router-link>
         </ul>
     </main>
 </template>
@@ -51,8 +51,11 @@
 
             // progress bar
             this.$nextTick(() => {
-                const diff = this.$parent.$el.clientHeight - this.$el.clientHeight;
-                this.max = this.$el.clientHeight - diff;
+                this.max = this.$el.clientHeight - (screen.height / 2);
+            });
+
+            window.addEventListener('resize', (evt) => {
+                this.max = this.$el.clientHeight - (screen.height / 2);
             });
 
             window.addEventListener('scroll', (evt) => {
