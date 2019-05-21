@@ -39,7 +39,8 @@ const routes = [
     }
 ];
 
-BlogEntries.map(blog => {
+    console.log(BlogEntries);
+BlogEntries.forEach(blog => {
     routes.push({
         path: blog.path,
         name: blog.title,

@@ -4,5 +4,17 @@
         "date": "2019-05-21",
         "title": "What’s new in Javascript?",
         "description": "Many of us know that there is a standard procedure for Javascript’s latest releases and a committee behind that. In this post, I will explain about who makes the final call on any new specification, what is the procedure for it, and what's new in ES2019."
+    },
+    {
+        "path": "/blog/what-s-new-in-css",
+        "date": "2019-04-11",
+        "title": "What’s new in CSS?",
+        "description": "Many of us know that there is a standard procedure for Javascript’s latest releases and a committee behind that. In this post, I will explain about who makes the final call on any new specification, what is the procedure for it, and what's new in ES2019."
+    },
+    {
+        "path": "/blog/what-s-new-in-php",
+        "date": "2019-02-1",
+        "title": "What’s new in PHP?",
+        "description": "Many of us know that there is a standard procedure for Javascript’s latest releases and a committee behind that. In this post, I will explain about who makes the final call on any new specification, what is the procedure for it, and what's new in ES2019."
     }
 ]

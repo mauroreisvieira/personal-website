@@ -3,9 +3,19 @@
   justify-content: space-between;
   width: 100%;
   margin: auto;
+  padding: 0;
 
   @include tablet {
     width: 50%;
+  }
+
+  &--blog {
+    width: 100%;
+    margin-top: var(--space-x-hg);
+
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &__item {
@@ -50,5 +60,22 @@
     &:focus {
       outline: none;
     }
+  }
+
+  &__prev,
+  &__next {
+    padding: var(--space-x-sm);
+    display: block;
+    font-weight: var(--typography-medium);
+    font-size: var(--typography-lg);
+    cursor: pointer;
+  }
+
+  &__prev {
+    padding-left: 0;
+  }
+
+  &__next {
+    padding-right: 0;
   }
 }

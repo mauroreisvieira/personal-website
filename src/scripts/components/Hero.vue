@@ -1,7 +1,7 @@
 <template>
     <section class="hero">
         <h1>{{ title }}</h1>
-        <slot />
+        <span v-if="date">{{ date }}</span>
     </section>
 </template>
 
@@ -12,6 +12,9 @@
                 type: String,
                 required: true
             },
+            date: {
+                type: String
+            }
         },
         data: function () {
             return {}
