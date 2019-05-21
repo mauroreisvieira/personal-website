@@ -1,14 +1,19 @@
-article {
- position: relative;
- display: flex;
- flex-direction: column;
- align-items: flex-start;
- justify-content: space-between;
- padding: var(--space-xl) 0;
- overflow: hidden;
- border-bottom: 1px solid var(--color-grayscale-lighter);
+.article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--space-xl) 0;
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-grayscale-lighter);
 
- span {
-  color: var(--color-grayscale-base);
- }
+  &__date {
+    color: var(--color-grayscale-light);
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 0;
+  }
 }

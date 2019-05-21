@@ -1,8 +1,8 @@
 [
     {
         "path": "/blog/what-s-new-in-javascript",
-        "date": "21/05/2019",
+        "date": "2019-05-21",
         "title": "What’s new in Javascript?",
-        "description": "Once upon a time there was a generous girl called Maud Sparrow. She was on the way to see her Albert Connor, when she decided to take a short cut through Spittleton Woods..."
+        "description": "Many of us know that there is a standard procedure for Javascript’s latest releases and a committee behind that. In this post, I will explain about who makes the final call on any new specification, what is the procedure for it, and what's new in ES2019."
     }
 ]

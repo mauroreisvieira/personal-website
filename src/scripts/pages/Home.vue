@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="container">
         <Hero title="Mauro Reis Vieira" />
     </main>
 </template>
@@ -9,9 +9,7 @@
     export default {
         components: { Hero },
         data: function () {
-            return {
-                theme: this.$store.state.theme
-            }
+            return {}
         }
     }
 </script>

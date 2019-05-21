@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="container">
         <Hero :title="title"/>
         <Page :path="path" />
     </main>

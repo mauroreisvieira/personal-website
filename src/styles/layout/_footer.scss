@@ -2,7 +2,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: calc(var(--space-x-hg) * 2);
+  margin-top: calc(var(--space-x-hg) * 2) !important;
 
   p {
     margin-bottom: 0;

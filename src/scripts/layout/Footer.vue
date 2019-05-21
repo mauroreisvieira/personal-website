@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer">
+    <footer class="container">
         <p>Copyright © 2019 Mauro Reis Vieira</p>
         <Social />
     </footer>

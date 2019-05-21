@@ -1,10 +1,11 @@
 <template>
-    <main>
+    <main class="container">
         <Hero title="Blog"/>
         <Article v-for="(item, index) in list"
             :key="index"
             :path="item.path"
             :title="item.title"
+            :description="item.description"
             :date="item.date" />
     </main>
 </template>

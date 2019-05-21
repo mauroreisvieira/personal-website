@@ -27,13 +27,47 @@ From the counterDemo class, the **#counter** value is private. If we try to acce
 ### Array Flat
 
 ```js
-const array = [1, 2, 3, 4, [5]];
-array.flat(); // Output: 1, 2, 3, 4, 5;
+const numbers = [1, 2, [3, 4, [5, 6]]];
+// Considers default depth of 1
+numbers.flat();
+> [1, 2, 3, 4, [5, 6]]
+// With depth of 2
+numbers.flat(2);
+> [1, 2, 3, 4, 5, 6]
+// Executes two flat operations
+numbers.flat().flat();
+> [1, 2, 3, 4, 5, 6]
+// Flattens recursively until the array contains no nested arrays
+numbers.flat(Infinity)
+> [1, 2, 3, 4, 5, 6]
 ```
 
-Array.flat will convert nested array items to a flat list. By default, it will convert 1 level deep. You can use
+`Array.flat` will convert nested array items to a flat list.
+By default, it will convert 1 level deep.
+
+**You can use:**
 
 `const array = [ 1, [2 , [3 , 4 , [5 , 6 ] ]]]`\
 `array.flat(Infinity);`
 
 The output will be **1, 2, 3, 4, 5, 6** if we use Infinity it will recursively convert to a flat list.
+
+### Optional Catch Binding
+
+```js
+// Before
+try {
+   ...
+} catch(error) {
+   ...
+}
+// After
+try {
+   ...
+} catch {
+   ...
+}
+```
+
+This feature is useful when you want to completely ignore the error.
+There are cases where you know the possible error that could trigger on operations. You can ignore the catch block handling.
