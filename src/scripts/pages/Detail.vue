@@ -1,6 +1,6 @@
 <template>
     <main class="container">
-        <Hero :title="title"/>
+        <Hero :title="title" date="APRIL 11, 2019"/>
         <Page :path="path" />
 
         <ul

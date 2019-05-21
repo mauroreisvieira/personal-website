@@ -10,4 +10,9 @@
   @include tablet {
     padding: var(--space-x-hg);
   }
+
+  &__date {
+    color: var(--color-grayscale-light);
+    text-transform: uppercase;
+  }
 }

@@ -1,7 +1,7 @@
 <template>
     <section class="hero">
         <h1>{{ title }}</h1>
-        <span v-if="date">{{ date }}</span>
+        <span v-if="date" class="hero__date">{{ date }}</span>
     </section>
 </template>
 
