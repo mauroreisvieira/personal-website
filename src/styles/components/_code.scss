@@ -1,12 +1,16 @@
 code {
   display: inline-block;
+  max-width: 100%;
   background-color: var(--color-accent-lighter);
   border-radius: var(--radius-xs);
   margin-bottom: var(--space-x-xs);
+  vertical-align: middle;
   font-size: var(--typography-sm);
   line-height: 1;
+  text-overflow: ellipsis;
   white-space: nowrap;
   color: var(--color-accent-base);
   padding: var(--space-xs) var(--space-x-sm);
   font-family: monospace;
+  overflow: hidden;
 }

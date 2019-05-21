@@ -48,12 +48,14 @@
       z-index: 0;
     }
 
-    &:hover {
-      color: inherit;
+    @media (hover: hover) {
+      &:hover {
+        color: inherit;
 
-      &::after {
-        transform: scaleX(1);
-        transform-origin: left center;
+        &::after {
+          transform: scaleX(1);
+          transform-origin: left center;
+        }
       }
     }
 

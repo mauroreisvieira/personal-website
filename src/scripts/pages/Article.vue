@@ -3,7 +3,8 @@
         <span class="article__date">{{ datetime }}</span>
         <h2 class="article__title">{{ title }}</h2>
         <p>{{ description }}</p>
-        <a :href="path" class="btn btn--accent btn--shaped">Read More</a>
+
+        <router-link :to="path" class="btn btn--accent btn--shaped">Read More</router-link>
     </article>
 </template>
 

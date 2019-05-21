@@ -52,26 +52,6 @@ By default, it will convert 1 level deep.
 
 The output will be **1, 2, 3, 4, 5, 6** if we use Infinity it will recursively convert to a flat list.
 
-### Optional Catch Binding
-
-```js
-// Before
-try {
-   ...
-} catch(error) {
-   ...
-}
-// After
-try {
-   ...
-} catch {
-   ...
-}
-```
-
-This feature is useful when you want to completely ignore the error.
-There are cases where you know the possible error that could trigger on operations. You can ignore the catch block handling.
-
 ### Set
 
 The Set object lets you store unique values of any type, whether primitive values or object references.\

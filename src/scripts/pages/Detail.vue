@@ -1,5 +1,6 @@
 <template>
     <main class="container">
+        <Progress :max="max" :value="value" />
         <Hero :title="title" :date="date"/>
         <Page :path="path" />
 
@@ -22,16 +23,19 @@
 <script>
     import { Utils } from '../helpers/utils.js'
 
-    import Hero from '../components/Hero.vue'
     import Page from './Page.vue'
+    import Hero from '../components/Hero.vue'
+    import Progress from '../components/Progress.vue'
     import BlogEntries from '../../../blog.json';
     export default {
-        components: { Hero, Page },
+        components: { Hero, Progress, Page },
         data: function () {
             return {
                 data: BlogEntries,
                 title: this.$router.currentRoute.name,
                 path: '/docs' + this.$router.currentRoute.path,
+                max: 0,
+                value: 0,
                 date: undefined,
                 prev: false,
                 next: false,
@@ -44,6 +48,16 @@
             this.next = this.current + 1;
 
             this.date = Utils.formatDate(this.data[this.current].date);
+
+            // progress bar
+            this.$nextTick(() => {
+                const diff = this.$parent.$el.clientHeight - this.$el.clientHeight;
+                this.max = this.$el.clientHeight - diff;
+            });
+
+            window.addEventListener('scroll', (evt) => {
+                this.value = window.scrollY;
+            });
         }
     }
 </script>

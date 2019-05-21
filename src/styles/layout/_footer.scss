@@ -1,10 +1,20 @@
-footer {
+footer.footer {
   display: flex;
-  justify-content: space-between;
-  margin-top: calc(var(--space-x-hg) * 2) !important;
+  flex-direction: column;
+  margin-top: calc(var(--space-x-hg) * 2);
+
+  @include tablet {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 
   p {
     margin-bottom: 0;
     color: var(--color-grayscale-light);
+    text-align: center;
+
+    @include tablet {
+      text-align: left;
+    }
   }
 }
