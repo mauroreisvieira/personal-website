@@ -71,3 +71,28 @@ try {
 
 This feature is useful when you want to completely ignore the error.
 There are cases where you know the possible error that could trigger on operations. You can ignore the catch block handling.
+
+### Set
+
+The Set object lets you store unique values of any type, whether primitive values or object references.\
+Set objects are collections of values. You can iterate through the elements of a set in insertion order.
+A value in the Set may only occur once; it is unique in the Set's collection.
+
+```js
+const duplicates = [1, 2, 3, 4, 1, 3, 4, 5];
+const uniques = Array.from(new Set(duplicates));
+
+console.log(uniques); //[1, 2, 3, 4, 5]
+
+const mySet = new Set();
+
+mySet.add(1); // Set [ 1 ]
+mySet.add(5); // Set [ 1, 5 ]
+
+mySet.has(1); // true
+
+mySet.size; // 5
+
+mySet.delete(5); // removes 5 from the set
+mySet.has(5);    // false, 5 has been removed
+```

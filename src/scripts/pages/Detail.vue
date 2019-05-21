@@ -1,6 +1,6 @@
 <template>
     <main class="container">
-        <Hero :title="title" date="APRIL 11, 2019"/>
+        <Hero :title="title" :date="date"/>
         <Page :path="path" />
 
         <ul
@@ -20,6 +20,8 @@
 </template>
 
 <script>
+    import { Utils } from '../helpers/utils.js'
+
     import Hero from '../components/Hero.vue'
     import Page from './Page.vue'
     import BlogEntries from '../../../blog.json';
@@ -30,15 +32,18 @@
                 data: BlogEntries,
                 title: this.$router.currentRoute.name,
                 path: '/docs' + this.$router.currentRoute.path,
-                current: 0,
+                date: undefined,
                 prev: false,
-                next: false
+                next: false,
+                current: 0,
             }
         },
         mounted() {
             this.current = this.data.findIndex(e => e.path === this.$router.currentRoute.path);
             this.prev = this.current - 1;
             this.next = this.current + 1;
+
+            this.date = Utils.formatDate(this.data[this.current].date);
         }
     }
 </script>

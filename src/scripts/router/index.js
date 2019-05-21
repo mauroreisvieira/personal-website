@@ -39,7 +39,6 @@ const routes = [
     }
 ];
 
-    console.log(BlogEntries);
 BlogEntries.forEach(blog => {
     routes.push({
         path: blog.path,

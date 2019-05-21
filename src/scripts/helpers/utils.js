@@ -8,4 +8,12 @@ export class Utils {
         }
         rawFile.send(null);
     }
+
+    static formatDate(date) {
+        const dt = new Date(date);
+        const day = dt.getDate();
+        const year = dt.getFullYear();
+        const month = dt.toLocaleString('en-us', { month: 'long' });
+        return `${month} ${day}, ${year}`;
+    }
 }
