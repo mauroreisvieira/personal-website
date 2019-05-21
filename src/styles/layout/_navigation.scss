@@ -64,6 +64,7 @@
 
   &__prev,
   &__next {
+    flex: 1;
     padding: var(--space-x-sm);
     display: block;
     font-weight: var(--typography-medium);
@@ -73,9 +74,11 @@
 
   &__prev {
     padding-left: 0;
+    text-align: left;
   }
 
   &__next {
     padding-right: 0;
+    text-align: right;
   }
 }
