@@ -14,6 +14,15 @@
   ::selection {
     background: var(--color-primary-light);
   }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--color-grayscale-lighter);
+    margin: var(--space-xl) 0;
+    padding: 0;
+  }
 }
 
 .container {

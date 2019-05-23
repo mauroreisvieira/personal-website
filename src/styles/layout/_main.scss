@@ -1,12 +1,12 @@
 main {
 
   a {
-    font-size: var(--typography-lg);
+    font-size: var(--typography-md);
   }
 
   p,
   li {
-    font-size: var(--typography-lg);
+    font-size: var(--typography-md);
     line-height: var(--typography-x-xl);
   }
 }

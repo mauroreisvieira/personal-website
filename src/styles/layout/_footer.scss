@@ -10,7 +10,8 @@ footer.footer {
 
   p {
     margin-bottom: 0;
-    color: var(--color-grayscale-light);
+    color: var(--color-grayscale-base);
+    font-size: var(--typography-sm);
     text-align: center;
 
     @include tablet {

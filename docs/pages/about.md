@@ -29,7 +29,8 @@ _April 2014 – May 2016_
 - Node.js
 - PHP
 
+---
 
-Drop me a line if you want to say _"Hello"_ or have a beer, I will be very happy to hear from you.
+Drop me a line if you want to say Hi or have a beer, I will be very happy to hear from you.
 
 [Let's Talk](mailto:mauroreivieira@gmail.com)

@@ -16,6 +16,7 @@ pre[class*="language-"] {
 
   @include tablet {
     margin: var(--space-xl) 0;
+    border-radius: var(--radius-sm);
   }
 }
 

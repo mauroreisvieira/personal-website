@@ -10,13 +10,18 @@
         components: { Hero },
         data: function () {
             return {
-                title: 'Hi'
+                title: 'Hi',
+                index: 0,
             }
         },
         mounted() {
-            const values = ['Hello', 'Olá', 'Hallo', 'Salut', 'Hola', 'Hei', 'Hallo', 'Hej', 'Helló'];
+            const values = ['Hi', 'Olá', 'Hallo', 'Salut', 'Hola', 'Hei', 'Hallo', 'Hej', 'Helló'];
             setInterval( () => {
-                this.title = values[Math.floor(Math.random() * values.length)];
+                this.index++;
+                if (this.index >= values.length) {
+                    this.index = 0;
+                }
+                this.title = values[this.index];
             }, 3000);
         }
     }

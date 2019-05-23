@@ -31,11 +31,7 @@
     text-align: right;
     text-transform: uppercase;
     font-weight: var(--typography-medium);
-    font-size: var(--typography-lg);
-
-    @include tablet {
-      font-size: var(--typography-lg);
-    }
+    font-size: var(--typography-md);
 
     span {
       position: relative;
@@ -78,7 +74,7 @@
     padding: var(--space-x-sm);
     display: block;
     font-weight: var(--typography-medium);
-    font-size: var(--typography-lg);
+    font-size: var(--typography-md);
     text-align: center;
     cursor: pointer;
   }

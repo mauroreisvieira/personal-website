@@ -37,15 +37,15 @@ $theme-color-base: get-color(grayscale) !default;
 
 // Font Sizes
 $theme-font-sizes: (
-  "x-hg" : 64px,
-  "hg"   : 46px,
+  "x-hg" : 66px,
+  "hg"   : 48px,
   "x-xl" : 34px,
   "xl"   : 26px,
-  "lg"   : 20px,
-  "md"   : 18px,
-  "base" : 16px,
-  "sm"   : 14px,
-  "x-sm" : 12px,
+  "lg"   : 24px,
+  "md"   : 20px,
+  "base" : $theme-font-size,
+  "sm"   : 16px,
+  "x-sm" : 14px,
   "xs"   : 10px,
   "x-xs" : 8px
 ) !default;
