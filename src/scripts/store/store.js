@@ -9,6 +9,7 @@ export const store = new Vuex.Store({
             search: false
         },
         social: {
+            codepen: "https://codepen.io/mauroreisvieira/",
             twitter: "https://twitter.com/mauroreisvieira/",
             github: "https://github.com/mauroreisvieira/",
             linkedin: "https://www.linkedin.com/in/mauro-reis-vieira-a752928b/"

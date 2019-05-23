@@ -54,3 +54,7 @@ Check my article related with [Sublime Text Tips](http://mauroreisvieira.com/sub
 
 I use [iTerm2](https://www.iterm2.com/) as my terminal also I use `oh-my-zsh` default command prompt.
 
+
+### Git Client
+
+I use [Sublime Merge](https://www.sublimemerge.com/) very fast and is possible resolve any merge conflicts directly in Sublime Merge, rather than having to open up your editor of choice.

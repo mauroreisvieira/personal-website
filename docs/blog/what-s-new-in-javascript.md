@@ -1,5 +1,4 @@
-Some of the new features are still proposal / not compatible in all browsers.\
-So if you are playing with the code, try to use Google Chrome.
+Some of the new features are still proposal, so if you are playing with the code, try to use **Google Chrome**.
 
 ### Private Fields
 
@@ -22,7 +21,8 @@ counter.increment(); // Output: 0;
 counter.value(); // Output: 1;
 ```
 
-From the counterDemo class, the **#counter** value is private. If we try to access the #counter, then syntax error will be shown.
+From the **Counter** class, the `#counter value is private.\
+If we try to access the `#counter, then syntax error will be shown.
 
 ### Array Flat
 
