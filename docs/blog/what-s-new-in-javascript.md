@@ -21,8 +21,8 @@ counter.increment(); // Output: 0;
 counter.value(); // Output: 1;
 ```
 
-From the **Counter** class, the `#counter value is private.\
-If we try to access the `#counter, then syntax error will be shown.
+From the **Counter** class, the `#counter` value is private.\
+If we try to access the `#counter`, then syntax error will be shown.
 
 ### Array Flat
 

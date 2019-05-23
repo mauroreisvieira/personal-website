@@ -4,24 +4,7 @@
 @import "./../../node_modules/stewed/src/packages/theme/index";
 @import "./../../node_modules/stewed/src/packages/variables";
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: $font-family-serif;
-  font-size: $font-size-base;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-weight: $font-weight-base;
-}
-
-body {
-  margin: 0 auto;
-  padding: 0;
-  color: get-color(grayscale, darker);
-}
-
+@import "./../../node_modules/stewed/src/packages/global";
 
 // Components
 @import "./../../node_modules/stewed/src/packages/typography/index";

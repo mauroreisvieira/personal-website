@@ -1,9 +1,7 @@
 <template>
-    <progress class="progress" :value="value" :max="max">
-        <div class="progress__container">
-            <span class="progress__bar"></span>
-        </div>
-    </progress>
+    <div class="progress">
+        <progress class="progress__control" :value="value" :max="max"></progress>
+    </div>
 </template>
 
 <script>
