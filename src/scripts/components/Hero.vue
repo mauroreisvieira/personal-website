@@ -15,14 +15,7 @@
             date: {
                 type: String
             }
-        },
-        data: function () {
-            return {}
-        },
-        mounted() {
-
-        },
-        methods: {}
+        }
     }
 </script>
 

@@ -3,16 +3,17 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: calc(60vh);
+  height: calc(50vh);
   padding: var(--space-sm);
   text-align: center;
 
   @include tablet {
-    min-height: 60vh;
+    height: calc(60vh);
     padding: var(--space-x-hg);
   }
 
   &__title {
+    --heading-margin-top: var(--space-lg);
     word-break: break-word;
   }
 

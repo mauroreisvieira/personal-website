@@ -14,10 +14,10 @@
             }
         },
         mounted() {
-            const values = ['Hello', 'Olá', 'Hallo', 'Salut', 'Hola', 'Hallo', 'Hej'];
+            const values = ['Hello', 'Olá', 'Hallo', 'Salut', 'Hola', 'Hei', 'Hallo', 'Hej', 'Helló'];
             setInterval( () => {
                 this.title = values[Math.floor(Math.random() * values.length)];
-            }, 2000);
+            }, 3000);
         }
     }
 </script>

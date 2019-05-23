@@ -6,6 +6,14 @@
   @include tablet {
     padding: var(--space-x-hg);
   }
+
+  ::-moz-selection {
+    background: var(--color-primary-light);
+  }
+
+  ::selection {
+    background: var(--color-primary-light);
+  }
 }
 
 .container {

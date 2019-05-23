@@ -1,0 +1,6 @@
+@import "./../../../node_modules/stewed/src/packages/typography/index";
+
+h1, h2, h3, h4, h5, h6 {
+  --heading-margin-top: var(--space-x-hg);
+  --heading-margin-bottom: var(--space-lg);
+}
