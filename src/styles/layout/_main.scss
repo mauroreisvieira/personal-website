@@ -4,7 +4,8 @@ main {
     font-size: var(--typography-lg);
   }
 
-  p {
+  p,
+  li {
     font-size: var(--typography-lg);
     line-height: var(--typography-x-xl);
   }
