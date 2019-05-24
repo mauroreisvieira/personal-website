@@ -2,6 +2,7 @@
     <nav class="social">
         <a
             class="social__item"
+            rel="noopener"
             aria-label="Follow me on Codepen"
             :href="this.social.codepen"
             target="_blank">
@@ -17,6 +18,7 @@
         </a>
         <a
             class="social__item"
+            rel="noopener"
             aria-label="Follow me on Github"
             :href="this.social.github"
             target="_blank">
@@ -32,6 +34,7 @@
         </a>
         <a
             class="social__item"
+            rel="noopener"
             aria-label="Follow me on Twitter"
             :href="this.social.twitter"
             target="_blank">
@@ -47,6 +50,7 @@
         </a>
         <a
             class="social__item"
+            rel="noopener"
             aria-label="Connect to me on Linkedin"
             :href="this.social.linkedin"
             target="_blank">

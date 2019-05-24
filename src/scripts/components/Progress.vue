@@ -1,5 +1,5 @@
 <template>
-    <div class="progress">
+    <div class="progress progress--accent">
         <progress class="progress__control" :value="value" :max="max"></progress>
     </div>
 </template>
