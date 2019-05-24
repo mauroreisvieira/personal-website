@@ -49,17 +49,18 @@
 
             this.date = Utils.formatDate(this.data[this.current].date);
 
-            // progress bar
-            this.$nextTick(() => {
-                this.max = this.$el.clientHeight - (screen.height / 2);
-            });
-
             window.addEventListener('resize', (evt) => {
                 this.max = this.$el.clientHeight - (screen.height / 2);
             });
 
             window.addEventListener('scroll', (evt) => {
                 this.value = window.scrollY;
+            });
+        },
+        updated() {
+            // progress bar
+            this.$nextTick(() => {
+                this.max = this.$el.clientHeight - (screen.height / 2);
             });
         }
     }

@@ -1,0 +1,11 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: .23s;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.42, 0.05, 0.58, 1);
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}
