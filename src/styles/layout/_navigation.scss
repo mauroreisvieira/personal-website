@@ -70,13 +70,28 @@
 
   &__prev,
   &__next {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     padding: var(--space-x-sm);
-    display: block;
     font-weight: var(--typography-medium);
     font-size: var(--typography-md);
     text-align: center;
     cursor: pointer;
+
+    span {
+      font-weight: var(--typography-regular);
+      font-size: var(--typography-sm);
+      color: var(--color-grayscale-light);
+    }
+
+    a {
+      display: flex;
+    }
+
+    svg {
+      width: var(--space-sm);
+    }
   }
 
   &__prev {
@@ -84,6 +99,14 @@
 
     @include tablet {
       text-align: left;
+
+      a {
+        justify-content: flex-start;
+      }
+
+      svg {
+        margin-right: var(--space-x-xs);
+      }
     }
   }
 
@@ -91,6 +114,14 @@
     padding-right: 0;
     @include tablet {
       text-align: right;
+
+      a {
+        justify-content: flex-end;
+      }
+
+      svg {
+        margin-left: var(--space-x-xs);
+      }
     }
   }
 }
