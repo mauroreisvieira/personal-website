@@ -1,11 +1,11 @@
 <template>
-    <article class="article">
-        <span class="article__date">{{ datetime }}</span>
-        <h2 class="article__title">{{ title }}</h2>
-        <p>{{ description }}</p>
-
-        <router-link :to="path" class="btn btn--accent btn--shaped">Read More</router-link>
-    </article>
+    <router-link :to="path">
+        <article class="article">
+            <span class="article__date">{{ datetime }}</span>
+            <h2 class="article__title">{{ title }}</h2>
+            <p>{{ description }}</p>
+        </article>
+    </router-link>
 </template>
 
 <script>

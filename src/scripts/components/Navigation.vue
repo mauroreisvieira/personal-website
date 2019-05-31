@@ -38,10 +38,10 @@
         },
         props: {
             prev: {
-                type: Number
+                type: [Number, Boolean]
             },
             next: {
-                type: Number
+                type: [Number, Boolean]
             }
         },
         mounted() {

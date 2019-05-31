@@ -1,6 +1,6 @@
 <template>
-    <main class="container">
-        <Hero :title="title" />
+    <main class="home container">
+        <Hero ref="hero" :title="title" />
     </main>
 </template>
 
@@ -16,13 +16,7 @@
         },
         mounted() {
             const values = ['Hi', 'Olá', 'Hallo', 'Salut', 'Hola', 'Hei', 'Hallo', 'Hej', 'Helló'];
-            setInterval( () => {
-                this.index++;
-                if (this.index >= values.length) {
-                    this.index = 0;
-                }
-                this.title = values[this.index];
-            }, 3000);
+            this.title = values[Math.floor(Math.random() * values.length)];
         }
     }
 </script>

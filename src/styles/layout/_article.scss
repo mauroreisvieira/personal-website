@@ -6,7 +6,14 @@
   justify-content: space-between;
   padding: var(--space-xl) 0;
   overflow: hidden;
+  color: initial;
   border-bottom: 1px solid var(--color-grayscale-lighter);
+
+  &:hover {
+    .article__title {
+      color: var(--color-primary-base);
+    }
+  }
 
   &__date {
     color: var(--color-grayscale-light);
