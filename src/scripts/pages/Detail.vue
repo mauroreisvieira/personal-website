@@ -6,10 +6,7 @@
             :date="date"
             />
         <Page :path="path" />
-        <Navigation
-            :prev="prev"
-            :next="next"
-        />
+        <Navigation />
     </main>
 </template>
 
@@ -32,16 +29,11 @@
                 value: 0,
                 date: undefined,
                 author: undefined,
-                prev: false,
-                next: false,
                 current: 0,
             }
         },
         mounted() {
             this.current = this.data.findIndex(e => e.path === this.$router.currentRoute.path);
-            this.prev = this.current - 1;
-            this.next = this.current + 1;
-
             const { date, author } = this.data[this.current];
 
             this.date = Utils.formatDate(date);

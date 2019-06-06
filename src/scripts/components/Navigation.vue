@@ -30,22 +30,20 @@
     export default {
         data: function () {
             return {
-                data: BlogEntries
+                data: BlogEntries,
+                next: 0,
+                prev: 0
             }
         },
         props: {
-            prev: {
-                type: [Number, Boolean]
-            },
-            next: {
-                type: [Number, Boolean]
-            }
+
         },
         mounted() {
-
-        }
+            this.current = this.data.findIndex(e => e.path === this.$router.currentRoute.path);
+            this.prev = this.current - 1;
+            this.next = this.current + 1;
+        },
     }
 </script>
-
 
 
