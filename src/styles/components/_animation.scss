@@ -1,11 +1,17 @@
-.fade-enter-active,
-.fade-leave-active {
-  transition-duration: .2s;
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.42, 0.05, 0.58, 1);
+.fade-enter-active {
+    transition: opacity .2s cubic-bezier(0.42, 0.05, 0.58, 1),
+        transform .33s cubic-bezier(0.42, 0.05, 0.58, 1);
 }
 
-.fade-enter,
+.fade-enter {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
 .fade-leave-active {
-  opacity: 0
+    transition: opacity .1s cubic-bezier(0.42, 0.05, 0.58, 1);
+}
+
+.fade-leave-active {
+  opacity: 0;
 }

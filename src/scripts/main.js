@@ -1,9 +1,9 @@
 import Vue from 'vue'
-import App from './scripts/App.vue'
+import App from './App.vue'
 import InstantSearch from 'vue-instantsearch';
 
-import router from './scripts/router'
-import { store } from './scripts/store/store';
+import router from './router'
+import { store } from './store';
 
 Vue.use(InstantSearch)
 

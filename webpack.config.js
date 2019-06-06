@@ -5,7 +5,7 @@ module.exports = {
     node: {
         fs: 'empty'
     },
-    entry: './src/main.js',
+    entry: './src/scripts/main.js',
     output: {
         path: path.resolve(__dirname, 'dist/scripts/'),
         filename: 'main.min.js',

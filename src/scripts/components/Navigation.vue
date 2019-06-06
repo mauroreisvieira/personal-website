@@ -1,9 +1,6 @@
 <template>
-    <ul
-        v-if="prev || next"
-        class="navigation navigation--blog"
-        role="navigation">
-        <li v-if="prev >= 0 && prev < data.length" class="navigation__prev">
+    <div class="navigation navigation--blog" role="navigation">
+        <div v-if="prev >= 0 && prev < data.length" class="navigation__prev">
             <span>Previous</span>
             <router-link :to="data[prev].path">
                 <svg fill="currentColor" viewBox="0 0 40 40">
@@ -13,8 +10,8 @@
                 </svg>
                 {{ data[prev].title }}
             </router-link>
-        </li>
-        <li v-if="next >= 0 && next < data.length" class="navigation__next">
+        </div>
+        <div v-if="next >= 0 && next < data.length" class="navigation__next">
             <span>Next</span>
             <router-link :to="data[next].path">
                 {{ data[next].title }}
@@ -24,8 +21,8 @@
                     </g>
                 </svg>
             </router-link>
-        </li>
-    </ul>
+        </div>
+    </div>
 </template>
 
 <script>

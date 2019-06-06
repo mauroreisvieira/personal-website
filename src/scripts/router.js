@@ -1,15 +1,15 @@
 import Vue from "vue";
 import Router from "vue-router";
 
-import About from "../Pages/About.vue";
-import Blog from "../Pages/Blog.vue";
-import Detail from "../Pages/Detail.vue";
-import Home from "../Pages/Home.vue";
-import Page from "../Pages/Page.vue";
+import About from "./Pages/About.vue";
+import Blog from "./Pages/Blog.vue";
+import Detail from "./Pages/Detail.vue";
+import Home from "./Pages/Home.vue";
+import Page from "./Pages/Page.vue";
 
-import BlogEntries from '../../../blog.json';
+import BlogEntries from './../../blog.json';
 
-import { store } from "../store/store";
+import { store } from "./store";
 Vue.use(Router);
 
 const routes = [

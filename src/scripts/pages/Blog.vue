@@ -1,5 +1,5 @@
 <template>
-    <main class="container">
+    <main class="container blog">
         <Hero title="Blog"/>
         <Article v-for="(item, index) in list"
             :key="index"
