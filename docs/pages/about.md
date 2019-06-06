@@ -11,7 +11,7 @@ I believe in open-source and collaboration over competition, also I love sharing
 **Front End Developer** − [Namecheap](https://www.namecheap.com/)\
 _October 2017 – Present_
 
-**Front End Developer** − [Hi INTERACTIVE](http://www.hi-interactive.pt/)\
+**Front End Developer / Back End Developer** − [Hi INTERACTIVE](http://www.hi-interactive.pt/)\
 _May 2016 – October 2017_
 
 **Web Developer** − [WayAcross](https://www.wayacross.pt/)\
@@ -20,9 +20,13 @@ _April 2014 – May 2016_
 
 ## Focus
 
+**Life**
+- Family & Friend
+
 **Front End Development**
- - Vanilla Javascript & Vue.js
  - CSS Animations
+ - Vanilla Javascript & Vue.js
+ - Mobile & Responsive Design
  - Performance & Accessibility
 
 **Back End Development**

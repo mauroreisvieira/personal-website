@@ -10,10 +10,12 @@
 
   ::-moz-selection {
     background: var(--color-primary-light);
+    color: #fff;
   }
 
   ::selection {
     background: var(--color-primary-light);
+    color: #fff;
   }
 
   hr {
