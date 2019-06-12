@@ -1,10 +1,17 @@
 <template>
     <div class="app">
         <Header />
-        <transition name="fade" mode="out-in">
+        <transition
+            name="fade-up"
+            mode="out-in"
+            @before-enter="beforeTransitionEnter"
+            @after-enter="afterTransitionEnter">
             <router-view :key="$route.fullPath"/>
         </transition>
-        <Footer />
+        <transition
+            name="fade">
+            <Footer v-if="this.footerIsVisible"/>
+        </transition>
     </div>
 </template>
 
@@ -17,23 +24,18 @@
         components: { Header, Footer },
         data: function () {
             return {
-                theme: this.$store.state.theme,
+                footerIsVisible: false
             }
         },
         mounted() {
-            document.title = this.$route.meta.title || this.theme.appName;
-            if (this.$route.meta) {
-                for (const [key, value] of Object.entries(this.$route.meta)) {
-                    const meta = document.createElement('meta');
-                    meta.setAttribute('name', key);
-                    meta.setAttribute('content', value);
-                    document.getElementsByTagName('head')[0].appendChild(meta);
-                }
-            }
+            this.footerIsVisible = true;
         },
-        watch: {
-            $route(to, from) {
-                document.title = to.meta.title || this.theme.appName
+        methods: {
+            beforeTransitionEnter() {
+                this.footerIsVisible = false;
+            },
+            afterTransitionEnter() {
+                this.footerIsVisible = true;
             }
         }
     }
