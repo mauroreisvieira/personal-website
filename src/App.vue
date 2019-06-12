@@ -9,8 +9,8 @@
 </template>
 
 <script>
-    import Header from './layout/Header.vue'
-    import Footer from './layout/Footer.vue'
+    import Header from './scripts/layout/Header.vue'
+    import Footer from './scripts/layout/Footer.vue'
 
     export default {
         name: 'app',
@@ -40,5 +40,5 @@
 </script>
 
 <style lang="scss">
-  @import "./../styles/app.scss";
+  @import "./styles/app.scss";
 </style>

@@ -24,7 +24,9 @@
             const md = new Remarkable({
                 langPrefix: 'hljs language-'
             });
+            console.log(file);
             Utils.readFile(file, (responseText) => {
+                console.log(responseText);
                 this.markdown = md.render(responseText);
                 this.$nextTick(function () {
                     Prism.highlightAll();

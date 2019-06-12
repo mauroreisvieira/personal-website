@@ -1,11 +1,11 @@
 import Vue from "vue";
 import Router from "vue-router";
 
-import About from "./Pages/About.vue";
-import Blog from "./Pages/Blog.vue";
-import Detail from "./Pages/Detail.vue";
-import Home from "./Pages/Home.vue";
-import Page from "./Pages/Page.vue";
+import About from "./pages/About.vue";
+import Blog from "./pages/Blog.vue";
+import Detail from "./pages/Detail.vue";
+import Home from "./pages/Home.vue";
+import Page from "./pages/Page.vue";
 
 import BlogEntries from './../../blog.json';
 
