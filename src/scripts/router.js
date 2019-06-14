@@ -5,11 +5,9 @@ import About from "./pages/About.vue";
 import Blog from "./pages/Blog.vue";
 import Detail from "./pages/Detail.vue";
 import Home from "./pages/Home.vue";
-import Page from "./pages/Page.vue";
 
 import BlogEntries from './../../blog.json';
 
-import { store } from "./store";
 Vue.use(Router);
 
 const routes = [

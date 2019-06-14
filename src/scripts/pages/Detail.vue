@@ -34,15 +34,15 @@
         },
         mounted() {
             this.current = this.data.findIndex(e => e.path === this.$router.currentRoute.path);
-            const { date, author } = this.data[this.current];
+            const { date } = this.data[this.current];
 
             this.date = Utils.formatDate(date);
 
-            window.addEventListener('resize', (evt) => {
+            window.addEventListener('resize', () => {
                 this.max = this.$el.clientHeight - (screen.height / 2);
             });
 
-            window.addEventListener('scroll', (evt) => {
+            window.addEventListener('scroll', () => {
                 this.value = window.scrollY;
             });
         },
