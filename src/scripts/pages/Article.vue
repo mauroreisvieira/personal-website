@@ -1,8 +1,14 @@
 <template>
     <router-link :to="path">
         <article class="article">
+            <picture class="article__picture">
+                <img
+                    src=""
+                    srcset=""
+                    alt="">
+                </picture>
             <span class="article__date">{{ datetime }}</span>
-            <h2 class="article__title">{{ title }}</h2>
+            <h3 class="article__title">{{ title }}</h3>
             <p>{{ description }}</p>
         </article>
     </router-link>

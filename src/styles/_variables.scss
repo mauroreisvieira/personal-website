@@ -1,6 +1,6 @@
 $theme-font-family-serif: "Merriweather", serif !default;
 $theme-font-family-sans-serif: "Work Sans", sans-serif !default;
-$theme-font-size: 20px !default;
+$theme-font-size: 18px !default;
 
 $theme-colors: (
   "primary"   : #3232dc,
@@ -16,7 +16,6 @@ $theme-tones-light: (
   10: 94%,
   30: 30%
 ) !default;
-
 
 $theme-color-primary: get-color(primary) !default;
 $theme-color-accent: get-color(accent) !default;
@@ -46,16 +45,17 @@ $theme-font-weight: (
 ) !default;
 
 $theme-spaces: (
-  "x-hg"  : 68px,
-  "hg"    : 52px,
-  "xl"    : 42px,
-  "lg"    : 36px,
-  "md"    : 24px,
-  "sm"   : 18px,
+  "x-hg"  : 80px,
+  "hg"    : 64px,
+  "xl"    : 48px,
+  "lg"    : 40px,
+  "md"    : 32px,
+  "sm"   : 24px,
   "x-sm" : 16px,
   "xs"   : 12px,
   "x-xs" : 4px
 ) !default;
+
 
 $theme-radius: (
   "hg": 32px,

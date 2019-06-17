@@ -5,4 +5,17 @@ header {
   &:empty {
     display: none;
   }
+
+  svg {
+    position: absolute;
+    right: var(--space-xl);
+    top: var(--space-xl);
+    width: var(--space-xs);
+    color: var(--color-accent-base);
+    cursor: pointer;
+
+    &:hover {
+        color: var(--color-accent-dark);
+    }
+  }
 }

@@ -23,5 +23,11 @@ body {
   margin: 0 auto;
   padding: 0;
   color: var(--color-grayscalse-base);
+
+  &.theme {
+    &--dark {
+
+    }
+  }
 }
 

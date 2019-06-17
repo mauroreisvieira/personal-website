@@ -1,12 +1,16 @@
 <template>
     <main class="container blog">
         <Hero title="Blog"/>
-        <Article v-for="(item, index) in list"
-            :key="index"
-            :path="item.path"
-            :title="item.title"
-            :description="item.description"
-            :date="item.date" />
+        <div class="row">
+            <Article
+                class="col-md-6"
+                v-for="(item, index) in list"
+                :key="index"
+                :path="item.path"
+                :title="item.title"
+                :description="item.description"
+                :date="item.date" />
+        </div>
     </main>
 </template>
 
