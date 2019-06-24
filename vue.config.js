@@ -7,6 +7,6 @@ module.exports = {
             filename: 'index.html',
         }
     },
-    publicPath: '/app'
+    publicPath: './'
 }
 

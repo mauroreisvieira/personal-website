@@ -1,5 +1,13 @@
 [
     {
+        "path": "/speech-synthesis-api",
+        "date": "2019-06-21",
+        "author": "Mauro Reis Vieira",
+        "picture": "",
+        "title": "The Speech Synthesis API",
+        "description": "The Speech Synthesis API is an awesome API, great to experiment new kind of interfaces and let the browser talk to you"
+    },
+    {
         "path": "/what-s-new-in-javascript",
         "date": "2019-05-21",
         "author": "Mauro Reis Vieira",
