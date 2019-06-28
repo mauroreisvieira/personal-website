@@ -1,33 +1,54 @@
-@import "variables";
+$theme-font-family-serif: "Merriweather", serif !default;
+$theme-font-family-sans-serif: "Work Sans", sans-serif !default;
+$theme-font-family-monospace: monospace !default;
+$theme-baseline: 8px !default;
 
-// Theme
-@import "./../../node_modules/stewed/src/packages/theme/index";
-@import "./../../node_modules/stewed/src/packages/variables";
+$theme-tones: (
+    100: 90%,
+    200: 80%,
+    300: 60%,
+    400: 30%,
+    500: 50%,
+    600: 20%,
+    700: 30%,
+    800: 48%,
+    900: 64%
+    )!default;
 
-// Typography
-@import "components/typography";
+$theme-colors: (
+    "primary": #0828CC,
+    "accent": #fc7690,
+    "grayscale": #454b57,
+    "warning": #f5c85c,
+    "danger": #f26175,
+    "info": #82a2ff,
+    "success": #69dd95
+) !default;
 
-* {
-  box-sizing: border-box;
-}
+$theme-font-weight: (
+    "light"   : 300,
+    "regular" : 400,
+    "medium"  : 700,
+    "bold"    : 900
+) !default;
 
-html {
-  font-family: $font-family-sans-serif;
-  font-size: $font-size-base;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-weight: $font-weight-base;
-}
+$theme-font-sizes: (
+    "hg"   : 56px,
+    "xl"   : 44px,
+    "lg"   : 32px,
+    "md"   : 24px,
+    "base" : 18px,
+    "sm"   : 14px,
+    "xs"   : 12px,
+) !default;
 
-body {
-  margin: 0 auto;
-  padding: 0;
-  color: var(--color-grayscalse-base);
+$theme-breakpoints: (
+    "sm": 280px,
+    "md": 768px,
+    "lg": 1024px,
+    "xl": 1440px
+) !default;
 
-  &.theme {
-    &--dark {
-
-    }
-  }
-}
+@import "./utils/mixins";
+@import "./utils/functions";
 

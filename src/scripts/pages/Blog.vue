@@ -1,16 +1,15 @@
 <template>
-    <main class="container blog">
+    <main class="main container">
         <Hero title="Blog"/>
-        <div class="row">
+        <section class="grid">
             <Article
-                class="col-md-6"
-                v-for="(item, index) in list"
-                :key="index"
-                :path="item.path"
-                :title="item.title"
-                :description="item.description"
-                :date="item.date" />
-        </div>
+            v-for="(item, index) in list"
+            :key="index"
+            :path="item.path"
+            :title="item.title"
+            :description="item.description"
+            :date="item.date" />
+        </section>
     </main>
 </template>
 
@@ -25,8 +24,7 @@
             return {
                 list: BlogEntries
             }
-        },
-        mounted() {}
+        }
     }
 </script>
 

@@ -10,18 +10,18 @@
 
   &__item {
     height: 100%;
-    padding: var(--space-sm);
-    color: var(--color-grayscale-darker);
+    padding: $theme-baseline * 2;
+    color: color(grayscale, 800);
 
     svg {
-      width: var(--typography-sm);
+      width: size(sm);
       height: 100%;
       fill: currentColor;
     }
 
     &:focus,
     &:hover {
-      color: var(--color-primary-base);
+      color: color(primary);
       outline: none;
     }
   }

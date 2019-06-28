@@ -1,17 +1,8 @@
 <template>
     <div class="app">
         <Header />
-        <transition
-            name="fade-up"
-            mode="out-in"
-            @before-enter="beforeTransitionEnter"
-            @after-enter="afterTransitionEnter">
-            <router-view :key="$route.fullPath"/>
-        </transition>
-        <transition
-            name="fade">
-            <Footer v-if="this.footerIsVisible"/>
-        </transition>
+        <router-view :key="$route.fullPath"/>
+        <Footer />
     </div>
 </template>
 
@@ -23,24 +14,13 @@
         name: 'app',
         components: { Header, Footer },
         data: function () {
-            return {
-                footerIsVisible: false
-            }
+            return {}
         },
-        mounted() {
-            this.footerIsVisible = true;
-        },
-        methods: {
-            beforeTransitionEnter() {
-                this.footerIsVisible = false;
-            },
-            afterTransitionEnter() {
-                this.footerIsVisible = true;
-            }
-        }
+        mounted() {},
+        methods: {}
     }
 </script>
 
 <style lang="scss">
-  @import "./styles/app.scss";
+  @import "./styles/styles.scss";
 </style>

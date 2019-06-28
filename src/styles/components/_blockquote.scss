@@ -1,11 +1,11 @@
 blockquote {
   position: relative;
-  border: 0 solid var(--color-info-base);
-  background-color: var(--color-info-lighter);
-  color: var(--color-info-darker);
+  border: 0 solid #{color(info)};
+  background-color: color(info, 300);
+  color: color(info, 700);
   border-left-width: 4px;
-  margin: var(--space-xl) 0;
-  padding: var(--space-md) var(--space-lg);
+  margin: $theme-baseline * 4 0;
+  padding: $theme-baseline $theme-baseline * 3;
 
   p {
     margin: 0;
@@ -22,13 +22,13 @@ blockquote {
       top: 0;
       font-size: var(--typography-xl);
       position: absolute;
-      background-color: var(--color-info-base);
+      background-color: color(info, 500);
       transform: translate(-50%, -50%);
       border-radius: 50%;
       width: 50px;
       height: 50px;
       text-align: center;
-      color: var(--color-info-darker);;
+      color: color(info, 700);
     }
   }
 }

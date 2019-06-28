@@ -1,21 +1,29 @@
-footer.footer {
-  display: flex;
-  flex-direction: column;
-  margin-top: calc(var(--space-x-hg) * 2);
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: $theme-baseline * 10;
+    padding: $theme-baseline * 3;
+    background: color(primary);
 
-  @include tablet {
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  p {
-    margin-bottom: 0;
-    color: var(--color-grayscale-base);
-    font-size: var(--typography-sm);
-    text-align: center;
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     @include tablet {
-      text-align: left;
+        justify-content: space-between;
+        flex-direction: row;
     }
-  }
+
+    p {
+        color: color(primary, 100);
+        font-size: size('sm');
+        text-align: center;
+
+        @include tablet {
+            text-align: left;
+        }
+    }
 }

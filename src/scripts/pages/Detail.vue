@@ -1,5 +1,5 @@
 <template>
-    <main class="container blog">
+    <main class="main container">
         <Progress :max="max" :value="value" />
         <Hero
             :title="title"

@@ -1,0 +1,74 @@
+// Theme
+@import "theme";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+  font-family: $theme-font-family-sans-serif;
+  font-size: get-size();
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: map-get($theme-font-weight, regular);
+  background-color: color(primary, 200);
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  line-height: 2;
+  color: color(grayscale);
+}
+
+::-moz-selection {
+    background: color(primary, 400);
+    color: #fff;
+}
+
+::selection {
+    background: color(primary, 400);
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 940px;
+    margin: auto;
+}
+
+:root {
+    @each $name, $hex in $theme-colors {
+        @each $tone, $percentage in $theme-tones {
+            @if $tone % 100 == 0 {
+                @if $tone < 500 {
+                    --color-#{$name}-#{$tone}: #{tint($hex, $percentage)};
+                }
+                @else if $tone > 500 {
+                    --color-#{$name}-#{$tone}: #{shade($hex, $percentage)};
+                }
+                @else {
+                    --color-#{$name}-#{$tone}: #{$hex};
+                }
+            }
+        }
+    }
+}
+
+// Layout
+@import "layout/app";
+@import "layout/header";
+@import "layout/hero";
+@import "layout/navigation";
+@import "layout/footer";
+@import "layout/main";
+@import "layout/social";
+@import "layout/article";
+
+// Component
+@import "components/button";
+@import "components/prismjs";
+@import "components/code";
+@import "components/blockquote";
+@import "components/progress";
+

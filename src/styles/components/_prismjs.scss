@@ -1,8 +1,8 @@
 /* stylelint-disable selector-max-type, selector-no-qualifying-type */
 code[class*="language-"],
 pre[class*="language-"] {
-  margin: var(--space-lg) calc(var(--space-sm) * -1);
-  color: var(--color-grayscale-lighter);
+  margin: $theme-baseline * 2;
+  color: color(grayscale, 300);
   background: none;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1em;
@@ -15,8 +15,8 @@ pre[class*="language-"] {
   hyphens: none;
 
   @include tablet {
-    margin: var(--space-xl) 0;
-    border-radius: var(--radius-sm);
+    margin: $theme-baseline * 2 0;
+    border-radius: 4px;
   }
 }
 
@@ -47,7 +47,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: var(--color-grayscale-darker);
+  background: color(grayscale, 700)
 }
 
 /* Inline code */
@@ -129,6 +129,6 @@ pre[class*="language-"] {
 }
 
 .hljs {
-  font-size: var(--typography-sm) !important;
-  line-height: var(--typography-xl) !important;
+  font-size: size(sm);
+  line-height: size(lg);
 }

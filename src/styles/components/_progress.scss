@@ -1,10 +1,20 @@
 .progress {
-  --progress-bar-background: transparent;
-  --progress-border-radius: 0;
-  --progress-size: 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+    width: 100%;
+    height: 2px;
+}
 
-  position: fixed;
-  right: 0;
-  top: 0;
-  left: 0;
+.progress::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+.progress::-webkit-progress-value {
+    background-color: color(accent);
+}
+
+.progress::-moz-progress-bar {
+    background-color: color(accent);
 }

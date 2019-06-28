@@ -28,7 +28,6 @@
 		"vue-template-compiler": "^2.6.10",
 		"sass": "^1.18.0",
 		"sass-loader": "^7.1.0",
-		"stewed": "^0.17.0",
 		"remarkable": "^1.7.1",
 		"prismjs": "^1.15.0"
 	},

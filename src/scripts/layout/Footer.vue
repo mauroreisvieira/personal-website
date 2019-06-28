@@ -1,7 +1,9 @@
 <template>
-    <footer class="footer container">
-        <p>Copyright © 2019 Mauro Reis Vieira</p>
-        <Social />
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright © 2019 Mauro Reis Vieira</p>
+            <Social />
+        </div>
     </footer>
 </template>
 

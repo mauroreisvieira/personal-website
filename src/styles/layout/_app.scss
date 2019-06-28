@@ -1,37 +1,6 @@
 .app {
-  min-height: 100vh;
-  background-color: var(--color-grayscale-lighter);
-  padding: var(--space-sm);
-
-  @include tablet {
-    padding: var(--space-x-hg);
-    margin: var(--space-sm);
-  }
-
-  ::-moz-selection {
-    background: var(--color-primary-light);
-    color: #fff;
-  }
-
-  ::selection {
-    background: var(--color-primary-light);
-    color: #fff;
-  }
-
-  hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid var(--color-grayscale-lighter);
-    margin: var(--space-xl) 0;
-    padding: 0;
-  }
-}
-
-.container {
-  width: 100%;
-  max-width: 920px;
-  margin: auto;
+    margin: $theme-baseline * 3;
+    background-color: #fff;
 }
 
 

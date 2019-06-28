@@ -3,22 +3,26 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: calc(50vh);
-  padding: var(--space-sm);
+  height: 50vh;
+  padding: $theme-baseline;
   text-align: center;
+
+  &__title {
+    font-size: size(hg);
+    font-family: $theme-font-family-serif;
+  }
 
   @include tablet {
     height: calc(60vh);
-    padding: var(--space-x-hg);
+    padding: $theme-baseline * 4;
   }
 
   &__title {
-    --heading-margin-top: var(--space-lg);
     word-break: break-word;
   }
 
   &__publish {
-    color: var(--color-grayscale-light);
+    color: color(grayscale, 300);
     text-transform: uppercase;
   }
 }

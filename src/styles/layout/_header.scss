@@ -1,6 +1,7 @@
-header {
+.header {
   display: flex;
   align-items: center;
+  padding: $theme-baseline * 6 0;
 
   &:empty {
     display: none;
@@ -8,10 +9,10 @@ header {
 
   svg {
     position: absolute;
-    right: var(--space-xl);
-    top: var(--space-xl);
-    width: var(--space-xs);
-    color: var(--color-accent-base);
+    right: $theme-baseline * 2;
+    top: $theme-baseline * 2;
+    width: $theme-baseline * 2;
+    color: var(--color-accent-500);
     cursor: pointer;
 
     &:hover {
