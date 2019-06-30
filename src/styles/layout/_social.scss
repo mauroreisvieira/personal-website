@@ -1,3 +1,4 @@
+/* stylelint-disable selector-max-type */
 .social {
   display: flex;
   align-items: center;
@@ -21,8 +22,8 @@
 
     &:focus,
     &:hover {
-      color: color(primary, 300);
       outline: none;
+      color: color(primary, 300);
     }
   }
 }

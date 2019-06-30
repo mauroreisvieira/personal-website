@@ -4,50 +4,50 @@ $theme-font-family-monospace: monospace !default;
 $theme-baseline: 8px !default;
 
 $theme-tones: (
-    100: 90%,
-    200: 80%,
-    300: 60%,
-    400: 30%,
-    500: 50%,
-    600: 20%,
-    700: 30%,
-    800: 48%,
-    900: 64%
+  100: 90%,
+  200: 80%,
+  300: 60%,
+  400: 30%,
+  500: 50%,
+  600: 20%,
+  700: 30%,
+  800: 48%,
+  900: 64%
 ) !default;
 
 $theme-colors: (
-    "primary": #0828cc,
-    "accent": #fc7690,
-    "grayscale": #454b57,
-    "warning": #f5c85c,
-    "danger": #f26175,
-    "info": #82a2ff,
-    "success": #69dd95
+  "primary": #0828cc,
+  "accent": #fc7690,
+  "grayscale": #454b57,
+  "warning": #f5c85c,
+  "danger": #f26175,
+  "info": #82a2ff,
+  "success": #69dd95
 ) !default;
 
 $theme-font-weight: (
-    "light": 300,
-    "regular": 400,
-    "medium": 700,
-    "bold": 900
+  "light": 300,
+  "regular": 400,
+  "medium": 700,
+  "bold": 900
 ) !default;
 
 $theme-font-sizes: (
-    "hg": 62px,
-    "big": 48px,
-    "xl": 38px,
-    "lg": 32px,
-    "md": 24px,
-    "base": 18px,
-    "sm": 14px,
-    "xs": 12px
+  "hg": 62px,
+  "big": 48px,
+  "xl": 38px,
+  "lg": 32px,
+  "md": 24px,
+  "base": 18px,
+  "sm": 14px,
+  "xs": 12px
 ) !default;
 
 $theme-breakpoints: (
-    "sm": 280px,
-    "md": 768px,
-    "lg": 1024px,
-    "xl": 1440px
+  "sm": 280px,
+  "md": 768px,
+  "lg": 1024px,
+  "xl": 1280px
 ) !default;
 
 @import "./utils/mixins";

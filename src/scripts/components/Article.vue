@@ -2,10 +2,7 @@
     <article class="article">
         <router-link :to="path"></router-link>
         <figure class="article__picture">
-            <img
-            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3900&q=80"
-            srcset=""
-            alt="">
+            <img :src="picture" :alt="title" />
         </figure>
         <aside>
             <h3 class="article__title">{{ title }}</h3>
@@ -45,3 +42,60 @@
         }
     }
 </script>
+
+<style lang="scss">
+/* stylelint-disable selector-max-type */
+@import "./../../styles/theme.scss";
+
+.article {
+  position: relative;
+  padding: 0 0 $theme-baseline * 2;
+  transition: opacity 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  color: initial;
+  overflow: hidden;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__title {
+    margin-top: $theme-baseline * 4;
+    font-size: size(lg);
+  }
+
+  &__picture {
+    margin: 0;
+    padding: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  hr {
+    width: $theme-baseline * 4;
+    margin: $theme-baseline * 4 0;
+    background-color: color(accent);
+  }
+
+  &__caption,
+  &__author {
+    margin: 0;
+    font-size: size(xs);
+    font-weight: weight(medium);
+    text-transform: uppercase;
+  }
+
+  &__caption {
+    color: color(grayscale, 300);
+  }
+}
+</style>

@@ -1,44 +1,56 @@
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 0;
+/* stylelint-disable selector-max-type */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: $theme-baseline * 2 0;
+  line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
-    font-family: $theme-font-family-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: $theme-font-family-serif;
 }
 
 h1 {
-    font-size: size(hg);
+  font-size: size(hg);
 }
 
 h2 {
-    font-size: size(big);
+  font-size: size(big);
 }
 
 h3 {
-    font-size: size(xl);
+  font-size: size(xl);
 }
 
 h4 {
-    font-size: size(lg);
+  font-size: size(lg);
 }
 
 h5 {
-    font-size: size(md);
+  font-size: size(md);
 }
 
 h6 {
-    font-size: size(base);
+  font-size: size(base);
 }
 
-p, a, li {
-    font-size: size(base);
+p,
+a,
+li {
+  font-size: size(base);
 }
 
 a {
-    color: color(primary);
-    text-decoration: none;
+  color: color(primary);
+  text-decoration: none;
 
-    &:hover {
-        color: color(primary, 700);
-    }
+  &:hover {
+    color: color(primary, 700);
+  }
 }

@@ -1,15 +1,16 @@
+/* stylelint-disable selector-max-type */
 code {
   display: inline-block;
   max-width: 100%;
-  background-color: color(accent, 200);
-  border-radius: 2px;
   margin-bottom: 2px;
-  vertical-align: middle;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: color(accent, 200);
+  color: color(accent, 800);
+  font-family: monospace;
   font-size: size(sm);
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: color(accent, 800);
-  padding: 4px;
-  font-family: monospace;
   overflow: hidden;
+  vertical-align: middle;
 }

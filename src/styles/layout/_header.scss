@@ -1,17 +1,18 @@
+/* stylelint-disable selector-max-type */
 .header {
   display: flex;
   align-items: center;
 
   svg {
     position: absolute;
-    right: $theme-baseline * 2;
     top: $theme-baseline * 2;
+    right: $theme-baseline * 2;
     width: $theme-baseline * 2;
     color: color(accent);
     cursor: pointer;
 
     &:hover {
-        color: color(accent, 700);
+      color: color(accent, 700);
     }
   }
 }

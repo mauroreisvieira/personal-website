@@ -1,5 +1,5 @@
 <template>
-    <header class="header container">
+    <header class="header">
         <Nav />
 <!--         <svg @click="themeChange"
             xmlns="http://www.w3.org/2000/svg"

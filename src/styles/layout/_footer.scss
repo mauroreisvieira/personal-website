@@ -1,23 +1,23 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    margin-top: $theme-baseline * 10;
-    padding: $theme-baseline * 3;
-    background: color(primary);
+  display: flex;
+  flex-direction: column;
+  margin-top: $theme-baseline * 10;
+  padding: $theme-baseline * 3;
+  background: color(primary);
+
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  p {
+    color: color(primary, 100);
+    font-size: size(sm);
+    text-align: center;
 
     @include tablet {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+      text-align: left;
     }
-
-    p {
-        color: color(primary, 100);
-        font-size: size('sm');
-        text-align: center;
-
-        @include tablet {
-            text-align: left;
-        }
-    }
+  }
 }

@@ -1,5 +1,5 @@
 <template>
-    <main class="main container">
+    <main class="main container container--sm">
         <Progress :max="max" :value="value" />
         <Hero
             :title="title"

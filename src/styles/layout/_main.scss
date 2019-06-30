@@ -1,8 +1,18 @@
 .main {
-    min-height: 75vh;
-    padding: 0 $theme-baseline * 3;
+  padding: 0 $theme-baseline * 3;
 
-    @include tablet {
-        padding: 0;
-    }
+  @include tablet {
+    padding: 0;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 940px;
+  max-width: map-get($theme-breakpoints, xl);
+  margin: auto;
+
+  &--sm {
+    max-width: map-get($theme-breakpoints, md);
+  }
 }
