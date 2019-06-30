@@ -12,11 +12,11 @@
     right: $theme-baseline * 2;
     top: $theme-baseline * 2;
     width: $theme-baseline * 2;
-    color: var(--color-accent-500);
+    color: color(accent);
     cursor: pointer;
 
     &:hover {
-        color: var(--color-accent-dark);
+        color: color(accent, 700);
     }
   }
 }

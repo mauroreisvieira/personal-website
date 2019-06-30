@@ -7,116 +7,116 @@
     &--blog {
         flex-direction: column;
         width: 100%;
-        padding-top: var(--space-lg);
-        margin-top: var(--space-x-hg);
+        padding-top: $theme-baseline * 4;
+        margin-top: $theme-baseline * 8;
         border-top: 1px solid color(grayscale, 200);
 
         @include tablet {
-          flex-direction: row;
-          width: 100%;
-      }
-  }
+            flex-direction: row;
+            width: 100%;
+        }
+    }
 
-  &__item {
-    position: relative;
-    text-decoration: none;
-    padding: $theme-baseline ;
-    color: inherit;
-    display: block;
-    text-transform: uppercase;
-    font-size: size(sm);
-    font-weight: weight(medium);
-
-    span {
-      position: relative;
-      z-index: 1;
-  }
-
-  &::after {
-      display: block;
-      position: absolute;
-      background: color(primary);
-      transform: scaleX(0);
-      transform-origin: right center;
-      transition: transform .4s cubic-bezier(.19,1,.22,1), opacity .6s cubic-bezier(.19,1,.22,1);
-      opacity: 0;
-      content: '';
-      bottom: 0;
-      width: $theme-baseline * 4;
-      height: 2px;
-      z-index: 0;
-  }
-
-  @media (hover: hover) {
-      &:hover {
+    &__item {
+        position: relative;
+        text-decoration: none;
+        padding: $theme-baseline ;
         color: inherit;
+        display: block;
+        text-transform: uppercase;
+        font-size: size(sm);
+        font-weight: weight(medium);
+
+        span {
+            position: relative;
+            z-index: 1;
+        }
 
         &::after {
-          transform-origin: left center;
-          transform: none;
-          opacity: 1;
-      }
-  }
-}
+            display: block;
+            position: absolute;
+            background: color(primary);
+            transform: scaleX(0);
+            transform-origin: right center;
+            transition: transform .4s cubic-bezier(.19,1,.22,1), opacity .6s cubic-bezier(.19,1,.22,1);
+            opacity: 0;
+            content: '';
+            bottom: 0;
+            width: $theme-baseline * 4;
+            height: 2px;
+            z-index: 0;
+        }
 
-&:focus {
-  outline: none;
-}
-}
+        @media (hover: hover) {
+            &:hover {
+                color: inherit;
 
-&__prev,
-&__next {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: $theme-baseline 0;
-    font-weight: font();
-    font-size: var(--typography-md);
-    text-align: center;
-    cursor: pointer;
+                &::after {
+                    transform-origin: left center;
+                    transform: none;
+                    opacity: 1;
+                }
+            }
+        }
 
-    a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-  }
-
-  span {
-      font-weight: var(--typography-regular);
-      font-size: var(--typography-sm);
-      color: color(grayscale, 200);
-  }
-
-  svg {
-      width: var(--space-sm);
-  }
-}
-
-&__prev {
-    @include tablet {
-      text-align: left;
-
-      a {
-        justify-content: flex-start;
+        &:focus {
+            outline: none;
+        }
     }
 
-    svg {
-        margin-right: var(--space-x-xs);
-    }
-}
-}
+    &__prev,
+    &__next {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: $theme-baseline 0;
+        font-weight: weight(medium);
+        font-size: size(md);
+        text-align: center;
+        cursor: pointer;
 
-&__next {
-    @include tablet {
-      text-align: right;
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-      a {
-        justify-content: flex-end;
+        span {
+            font-weight: weight(regular);
+            font-size: size(sm);
+            color: color(grayscale, 200);
+        }
+
+        svg {
+            width: $theme-baseline * 2;
+        }
     }
 
-    svg {
-        margin-left: var(--space-x-xs);
+    &__prev {
+        @include tablet {
+            text-align: left;
+
+            a {
+                justify-content: flex-start;
+            }
+
+            svg {
+                margin-right: $theme-baseline / 2;
+            }
+        }
     }
-}
-}
+
+    &__next {
+        @include tablet {
+            text-align: right;
+
+            a {
+                justify-content: flex-end;
+            }
+
+            svg {
+                margin-left: $theme-baseline / 2;
+            }
+        }
+    }
 }

@@ -1,28 +1,20 @@
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 50vh;
-  padding: $theme-baseline;
-  text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
 
-  &__title {
-    font-size: size(hg);
-    font-family: $theme-font-family-serif;
-  }
+    @include tablet {
+        height: calc(60vh);
+        padding: $theme-baseline * 4;
+    }
 
-  @include tablet {
-    height: calc(60vh);
-    padding: $theme-baseline * 4;
-  }
+    &__title {
+        word-break: break-word;
+    }
 
-  &__title {
-    word-break: break-word;
-  }
-
-  &__publish {
-    color: color(grayscale, 300);
-    text-transform: uppercase;
-  }
+    &__publish {
+        color: color(grayscale, 300);
+        text-transform: uppercase;
+    }
 }

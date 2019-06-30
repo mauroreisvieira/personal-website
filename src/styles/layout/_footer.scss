@@ -7,14 +7,13 @@
 
     .container {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+        flex-direction: column;
 
-    @include tablet {
-        justify-content: space-between;
-        flex-direction: row;
+        @include tablet {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 
     p {

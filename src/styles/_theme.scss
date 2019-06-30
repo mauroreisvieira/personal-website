@@ -13,10 +13,10 @@ $theme-tones: (
     700: 30%,
     800: 48%,
     900: 64%
-    )!default;
+) !default;
 
 $theme-colors: (
-    "primary": #0828CC,
+    "primary": #0828cc,
     "accent": #fc7690,
     "grayscale": #454b57,
     "warning": #f5c85c,
@@ -26,20 +26,21 @@ $theme-colors: (
 ) !default;
 
 $theme-font-weight: (
-    "light"   : 300,
-    "regular" : 400,
-    "medium"  : 700,
-    "bold"    : 900
+    "light": 300,
+    "regular": 400,
+    "medium": 700,
+    "bold": 900
 ) !default;
 
 $theme-font-sizes: (
-    "hg"   : 56px,
-    "xl"   : 44px,
-    "lg"   : 32px,
-    "md"   : 24px,
-    "base" : 18px,
-    "sm"   : 14px,
-    "xs"   : 12px,
+    "hg": 58px,
+    "big": 46px,
+    "xl": 38px,
+    "lg": 32px,
+    "md": 24px,
+    "base": 18px,
+    "sm": 14px,
+    "xs": 12px
 ) !default;
 
 $theme-breakpoints: (
@@ -51,4 +52,3 @@ $theme-breakpoints: (
 
 @import "./utils/mixins";
 @import "./utils/functions";
-

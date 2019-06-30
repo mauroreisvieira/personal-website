@@ -39,7 +39,6 @@
         @error "Invalid color specified! #{$color} doesn't exist. Choose one of #{map-keys($theme-colors)}";
     }
 
-
     @return var(--color-#{$color}-#{$tone});
 }
 

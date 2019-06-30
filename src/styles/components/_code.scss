@@ -1,16 +1,15 @@
 code {
   display: inline-block;
   max-width: 100%;
-  background-color: var(--color-accent-lighter);
-  border-radius: var(--radius-xs);
-  margin-bottom: var(--space-x-xs);
+  background-color: color(accent, 200);
+  border-radius: 2px;
+  margin-bottom: 2px;
   vertical-align: middle;
-  font-size: var(--typography-sm);
-  line-height: 1;
+  font-size: size(sm);
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: var(--color-accent-darker);
-  padding: var(--space-x-xs) var(--space-xs);
+  color: color(accent, 800);
+  padding: 4px;
   font-family: monospace;
   overflow: hidden;
 }

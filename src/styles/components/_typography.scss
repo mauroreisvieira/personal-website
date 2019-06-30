@@ -1,7 +1,44 @@
-@import "./../../../node_modules/stewed/src/packages/typography/index";
-
 h1, h2, h3, h4, h5, h6 {
-  --heading-margin-top: var(--space-x-hg);
-  --heading-margin-bottom: var(--space-xs);
-  --heading-font-family: var(--font-family-serif);
+    margin-bottom: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: $theme-font-family-serif;
+}
+
+h1 {
+    font-size: size(hg);
+}
+
+h2 {
+    font-size: size(big);
+}
+
+h3 {
+    font-size: size(xl);
+}
+
+h4 {
+    font-size: size(lg);
+}
+
+h5 {
+    font-size: size(md);
+}
+
+h6 {
+    font-size: size(base);
+}
+
+p, a, li {
+    font-size: size(base);
+}
+
+a {
+    color: color(primary);
+    text-decoration: none;
+
+    &:hover {
+        color: color(primary, 700);
+    }
 }

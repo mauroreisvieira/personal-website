@@ -1,6 +1,9 @@
 .app {
-    margin: $theme-baseline * 3;
     background-color: #fff;
+
+    @include tablet {
+        margin: $theme-baseline * 3;
+    }
 }
 
 

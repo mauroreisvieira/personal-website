@@ -20,7 +20,7 @@ blockquote {
       content: "❝";
       left: 0;
       top: 0;
-      font-size: var(--typography-xl);
+      font-size: size(xl);
       position: absolute;
       background-color: color(info, 500);
       transform: translate(-50%, -50%);
