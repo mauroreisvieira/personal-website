@@ -4,10 +4,10 @@
 * @param {Size}  $theme-font-size
 * @return {Size}
 */
-@function calculate-rem($size, $font-size: map-get($theme-font-sizes, 'base')) {
-    $remSize: $size / $font-size;
+@function calculate-rem($size, $font-size: map-get($theme-font-sizes, base)) {
+  $remSize: $size / $font-size;
 
-    @return #{$remSize}rem;
+  @return #{$remSize}rem;
 }
 
 /* Slightly lighten a color
@@ -16,7 +16,7 @@
 * @return {Color}
 */
 @function tint($color, $percentage) {
-    @return mix(white, $color, $percentage);
+  @return mix(white, $color, $percentage);
 }
 
 /* Slightly darken a color
@@ -25,7 +25,7 @@
 * @return {Color}
 */
 @function shade($color, $percentage) {
-    @return mix(black, $color, $percentage);
+  @return mix(black, $color, $percentage);
 }
 
 /**
@@ -35,25 +35,25 @@
 * @return {Color}  $color
 */
 @function color($color, $tone: 500) {
-    @if not map-has-key($theme-colors, $color) {
-        @error "Invalid color specified! #{$color} doesn't exist. Choose one of #{map-keys($theme-colors)}";
-    }
+  @if not map-has-key($theme-colors, $color) {
+    @error "Invalid color specified! #{$color} doesn't exist. Choose one of #{map-keys($theme-colors)}";
+  }
 
-    @return var(--color-#{$color}-#{$tone});
+  @return var(--color-#{$color}-#{$tone});
 }
 
-@function size($size: 'base') {
-    @if not map-has-key($theme-font-sizes, $size) {
-        @error "Invalid size specified! #{$size} doesn't exist. Choose one of #{map-keys($theme-font-sizes)}";
-    }
+@function size($size: base) {
+  @if not map-has-key($theme-font-sizes, $size) {
+    @error "Invalid size specified! #{$size} doesn't exist. Choose one of #{map-keys($theme-font-sizes)}";
+  }
 
-    @return calculate-rem(map-get($theme-font-sizes, $size));
+  @return calculate-rem(map-get($theme-font-sizes, $size));
 }
 
-@function weight($weight: 'regular') {
-    @if not map-has-key($theme-font-weight, $weight) {
-        @error "Invalid size specified! #{$weight} doesn't exist. Choose one of #{map-keys($theme-font-weight)}";
-    }
+@function weight($weight: regular) {
+  @if not map-has-key($theme-font-weight, $weight) {
+    @error "Invalid size specified! #{$weight} doesn't exist. Choose one of #{map-keys($theme-font-weight)}";
+  }
 
-    @return map-get($theme-font-weight, $weight);
+  @return map-get($theme-font-weight, $weight);
 }

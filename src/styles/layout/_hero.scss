@@ -3,11 +3,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  min-height: 62vh;
   text-align: center;
 
   @include tablet {
-    height: calc(60vh);
     padding: $theme-baseline * 4;
   }
 

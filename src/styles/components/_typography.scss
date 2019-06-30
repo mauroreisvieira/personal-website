@@ -1,12 +1,21 @@
 /* stylelint-disable selector-max-type */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: $theme-baseline * 2 0;
-  line-height: 1.6;
+@for $i from 1 through 6 {
+  h#{$i},
+  .h#{$i} {
+    $index: $i + 1;
+    $o: nth($theme-font-sizes, $index);
+
+    margin: $theme-baseline * 5 0 $theme-baseline * 2;
+    font-size: size(nth($o, 1));
+    line-height: 1.6;
+
+    @include tablet {
+      $index: $i;
+      $o: nth($theme-font-sizes, $index);
+
+      font-size: size(nth($o, 1));
+    }
+  }
 }
 
 h1,
@@ -14,30 +23,6 @@ h2,
 h3,
 h4 {
   font-family: $theme-font-family-serif;
-}
-
-h1 {
-  font-size: size(hg);
-}
-
-h2 {
-  font-size: size(big);
-}
-
-h3 {
-  font-size: size(xl);
-}
-
-h4 {
-  font-size: size(lg);
-}
-
-h5 {
-  font-size: size(md);
-}
-
-h6 {
-  font-size: size(base);
 }
 
 p,

@@ -1,5 +1,5 @@
 <template>
-    <main class="main container">
+    <main class="main container home">
         <Hero ref="hero" :title="title" />
     </main>
 </template>
@@ -20,6 +20,3 @@
         }
     }
 </script>
-
-
-

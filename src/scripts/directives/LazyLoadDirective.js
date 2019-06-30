@@ -1,7 +1,6 @@
 export default {
   inserted: el => {
     function loadImage() {
-        console.log('loadImage');
       const imageElement = Array.from(el.children).find(
         el => el.nodeName === "IMG"
       );
@@ -10,7 +9,6 @@ export default {
         imageElement.addEventListener("load", () => {
           setTimeout(() => el.classList.add("is-loaded"), 100);
         });
-        imageElement.addEventListener("error", () => console.log("error"));
         imageElement.src = imageElement.dataset.url;
       }
     }
