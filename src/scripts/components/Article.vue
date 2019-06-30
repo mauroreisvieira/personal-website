@@ -26,9 +26,7 @@
     components: { ImageSpinner },
     data: function () {
       return {
-        datetime: Utils.formatDate(this.date),
-        rowHeight: 24,
-        rowGap: 80
+        datetime: Utils.formatDate(this.date)
       }
     },
     props: {
@@ -84,6 +82,7 @@
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 9;
   }
 
   &__title {
