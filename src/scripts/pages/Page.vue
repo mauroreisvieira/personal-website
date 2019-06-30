@@ -5,7 +5,7 @@
 <script>
     import Prism from 'prismjs'
     import Remarkable from 'remarkable'
-    import { Utils } from '../helpers/utils.js'
+    import { Utils } from '../helpers/Utils.js'
     export default {
         data: function () {
             return {

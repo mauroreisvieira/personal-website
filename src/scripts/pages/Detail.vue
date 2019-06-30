@@ -11,7 +11,7 @@
 </template>
 
 <script>
-    import { Utils } from '../helpers/utils.js'
+    import { Utils } from '../helpers/Utils.js'
 
     import Page from './Page.vue'
     import Hero from '../components/Hero.vue'

@@ -20,7 +20,7 @@ _April 2014 – May 2016_
 
 ### Focus
 
-### Life
+#### Life
 - Family & Friend
 
 #### Front End Development

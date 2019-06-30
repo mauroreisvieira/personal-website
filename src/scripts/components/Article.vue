@@ -1,46 +1,66 @@
 <template>
-    <article class="article">
-        <router-link :to="path"></router-link>
-        <figure class="article__picture">
-            <img :src="picture" :alt="title" />
-        </figure>
-        <aside>
-            <h3 class="article__title">{{ title }}</h3>
-            <p>{{ description }}</p>
-            <hr>
-            <h6 class="article__author">Mauro Reis Vieira, @Namecheap</h6>
-            <h6 class="article__caption">{{ datetime }} / 30min</h6>
-        </aside>
-    </article>
+  <article class="article">
+    <router-link :to="path"></router-link>
+    <figure v-lazyload class="article__picture">
+      <ImageSpinner
+      class="image__spinner"
+      />
+      <img
+      :data-url="this.static(picture)"
+      :alt="title" />
+    </figure>
+    <aside class="article__content">
+      <h3 class="article__title">{{ title }}</h3>
+      <p>{{ description }}</p>
+      <hr>
+      <h6 class="article__author">Mauro Reis Vieira, @Namecheap</h6>
+      <h6 class="article__caption">{{ datetime }} / 30min</h6>
+    </aside>
+  </article>
 </template>
 
 <script>
-    import { Utils } from '../helpers/utils.js'
-    export default {
-        data: function () {
-            return {
-                datetime: Utils.formatDate(this.date)
-            }
-        },
-        props: {
-            path: {
-                type: String,
-                required: true
-            },
-            title: {
-                type: String,
-                required: true
-            },
-            description: {
-                type: String,
-                required: true
-            },
-            date: {
-                type: String,
-                required: true
-            }
-        }
-    }
+  import { Utils } from '../helpers/Utils.js'
+  import ImageSpinner from "./ImageSpinner";
+  export default {
+    components: { ImageSpinner },
+    data: function () {
+      return {
+        datetime: Utils.formatDate(this.date),
+        rowHeight: 24,
+        rowGap: 80
+      }
+    },
+    props: {
+      path: {
+        type: String,
+        required: true
+      },
+      title: {
+        type: String,
+        required: true
+      },
+      picture: {
+        type: String,
+        required: true
+      },
+      description: {
+        type: String,
+        required: true
+      },
+      date: {
+        type: String,
+        required: true
+      }
+    },
+    methods: {
+      static(image) {
+        return require('@/statics/blog/' + image);
+      },
+    },
+    mounted() {}
+  }
+
 </script>
 
 <style lang="scss">
@@ -72,12 +92,22 @@
   }
 
   &__picture {
+    position: relative;
+    display: flex;
+    height: $theme-baseline * 40;
     margin: 0;
     padding: 0;
+    background-color: color(grayscale, 100);
 
     img {
       width: 100%;
+      object-fit: cover;
     }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
   }
 
   hr {

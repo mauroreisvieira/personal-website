@@ -1,9 +1,5 @@
 .main {
   padding: 0 $theme-baseline * 3;
-
-  @include tablet {
-    padding: 0;
-  }
 }
 
 .container {
