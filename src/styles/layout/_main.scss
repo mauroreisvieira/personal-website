@@ -1,4 +1,8 @@
 .main {
     min-height: 75vh;
-    padding: $theme-baseline * 3;
+    padding: 0 $theme-baseline * 3;
+
+    @include tablet {
+        padding: 0;
+    }
 }

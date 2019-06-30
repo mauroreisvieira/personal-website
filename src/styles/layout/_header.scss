@@ -1,11 +1,6 @@
 .header {
   display: flex;
   align-items: center;
-  padding: $theme-baseline * 6 0;
-
-  &:empty {
-    display: none;
-  }
 
   svg {
     position: absolute;
