@@ -9,6 +9,10 @@
     font-size: size(nth($o, 1));
     line-height: 1.6;
 
+    @if ($i < 5) {
+      font-family: $theme-font-family-serif;
+    }
+
     @include tablet {
       $index: $i;
       $o: nth($theme-font-sizes, $index);
@@ -16,13 +20,6 @@
       font-size: size(nth($o, 1));
     }
   }
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: $theme-font-family-serif;
 }
 
 p,

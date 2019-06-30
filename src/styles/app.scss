@@ -22,12 +22,8 @@ body {
 }
 
 .app {
-  padding-top: $theme-baseline * 8;
+  padding-top: $theme-baseline * 3;
   background-color: #fff;
-
-  @include tablet {
-    margin: $theme-baseline * 3;
-  }
 }
 
 ::-moz-selection {
