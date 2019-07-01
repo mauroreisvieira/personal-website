@@ -1,6 +1,11 @@
 <template>
     <nav class="social">
-        <a :href="this.social.codepen" class="social__item" target="_blank">
+        <a
+            class="social__item"
+            rel="noopener"
+            aria-label="Follow me on Codepen"
+            :href="this.social.codepen"
+            target="_blank">
             <svg
                 role="img"
                 viewBox="0 0 32 32"
@@ -11,7 +16,12 @@
                 </path>
             </svg>
         </a>
-        <a :href="this.social.github" class="social__item" target="_blank">
+        <a
+            class="social__item"
+            rel="noopener"
+            aria-label="Follow me on Github"
+            :href="this.social.github"
+            target="_blank">
             <svg
                 role="img"
                 viewBox="0 0 24 24"
@@ -22,7 +32,12 @@
                 ></path>
             </svg>
         </a>
-        <a :href="this.social.twitter" class="social__item" target="_blank">
+        <a
+            class="social__item"
+            rel="noopener"
+            aria-label="Follow me on Twitter"
+            :href="this.social.twitter"
+            target="_blank">
             <svg
                 role="img"
                 viewBox="0 0 24 24"
@@ -33,7 +48,12 @@
                 ></path>
             </svg>
         </a>
-        <a :href="this.social.linkedin" class="social__item" target="_blank">
+        <a
+            class="social__item"
+            rel="noopener"
+            aria-label="Connect to me on Linkedin"
+            :href="this.social.linkedin"
+            target="_blank">
             <svg
                 role="img"
                 viewBox="0 0 24 24"

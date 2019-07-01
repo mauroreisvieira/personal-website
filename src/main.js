@@ -1,15 +1,14 @@
 import Vue from 'vue'
-import App from './scripts/App.vue'
-import InstantSearch from 'vue-instantsearch';
+import App from './App.vue'
+import LazyLoadDirective from "./scripts/directives/LazyLoadDirective";
 
 import router from './scripts/router'
-import { store } from './scripts/store/store';
+import { store } from './scripts/store';
 
-Vue.use(InstantSearch)
+Vue.directive("lazyload", LazyLoadDirective);
 
 new Vue({
-    el: '#app',
-    store,
-    router,
-    render: h => h(App)
-})
+  store,
+  router,
+  render: h => h(App)
+}).$mount("#app");

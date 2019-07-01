@@ -1,6 +1,6 @@
 <template>
-    <main class="container">
-        <Hero :title="title" />
+    <main class="main container home">
+        <Hero ref="hero" :title="title" />
     </main>
 </template>
 
@@ -10,17 +10,13 @@
         components: { Hero },
         data: function () {
             return {
-                title: 'Hi'
+                title: 'Hi',
+                index: 0,
             }
         },
         mounted() {
-            const values = ['Hello', 'Olá', 'Hallo', 'Salut', 'Hola', 'Hallo', 'Hej'];
-            setInterval( () => {
-                this.title = values[Math.floor(Math.random() * values.length)];
-            }, 2000);
+            const values = ['Hi', 'Olá', 'Hallo', 'Salut', 'Hola', 'Hei', 'Hallo', 'Hej', 'Helló'];
+            this.title = values[Math.floor(Math.random() * values.length)];
         }
     }
 </script>
-
-
-

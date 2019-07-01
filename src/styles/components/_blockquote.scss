@@ -1,12 +1,34 @@
+/* stylelint-disable selector-max-type */
 blockquote {
-  border: 0 solid var(--color-info-base);
-  background-color: var(--color-info-lighter);
-  color: var(--color-info-darker);
+  position: relative;
+  margin: $theme-baseline * 4 0;
+  padding: $theme-baseline $theme-baseline * 3;
+  border: 0 solid #{color(info)};
   border-left-width: 4px;
-  margin: var(--space-lg) 0;
-  padding: var(--space-md) var(--space-lg);
+  background-color: color(info, 300);
+  color: color(info, 700);
 
   p {
     margin: 0;
+  }
+
+  @include tablet {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: color(info, 500);
+      color: color(info, 700);
+      font-size: size(xl);
+      text-align: center;
+      content: "❝";
+    }
   }
 }

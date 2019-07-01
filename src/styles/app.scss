@@ -1,32 +1,76 @@
-// Theme
+/* stylelint-disable selector-max-type, selector-max-universal, selector-no-vendor-prefix */
 @import "theme";
 
-// Stewed
-@import "./../../node_modules/stewed/src/packages/form-field/index";
-@import "./../../node_modules/stewed/src/packages/textfield/index";
-@import "./../../node_modules/stewed/src/packages/menu/index";
-@import "./../../node_modules/stewed/src/packages/tag/index";
-@import "./../../node_modules/stewed/src/packages/grid/index";
-@import "./../../node_modules/stewed/src/packages/table/index";
-@import "./../../node_modules/stewed/src/packages/card/index";
-@import "./../../node_modules/stewed/src/packages/button/index";
+* {
+  box-sizing: border-box;
+}
 
-// Utils
-@import "utils/mixins";
+html {
+  background-color: color(primary, 200);
+  font-family: $theme-font-family-sans-serif;
+  font-size: map-get($theme-font-sizes, base);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: map-get($theme-font-weight, regular);
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  color: color(grayscale, 800);
+  line-height: 2;
+}
+
+.app {
+  padding-top: $theme-baseline * 3;
+  background-color: #fff;
+}
+
+::-moz-selection {
+  background: color(primary, 400);
+  color: #fff;
+}
+
+::selection {
+  background: color(primary, 400);
+  color: #fff;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  margin: $theme-baseline * 8 0;
+  padding: 0;
+  border: 0;
+  background-color: color(grayscale, 200);
+}
+
+:root {
+  @each $name, $hex in $theme-colors {
+    @each $tone, $percentage in $theme-tones {
+      @if $tone % 100 == 0 {
+        @if $tone < 500 {
+          --color-#{$name}-#{$tone}: #{tint($hex, $percentage)};
+        } @else if $tone > 500 {
+          --color-#{$name}-#{$tone}: #{shade($hex, $percentage)};
+        } @else {
+          --color-#{$name}-#{$tone}: #{$hex};
+        }
+      }
+    }
+  }
+}
+
+// Component
+@import "components/typography";
+@import "components/prismjs";
+@import "components/code";
+@import "components/blockquote";
 
 // Layout
-@import "layout/app";
 @import "layout/header";
+@import "layout/hero";
 @import "layout/navigation";
 @import "layout/footer";
 @import "layout/main";
-@import "layout/article";
-
-// Component
-@import "components/hero";
-@import "components/button";
-@import "components/prismjs";
-@import "components/social";
-@import "components/code";
-@import "components/blockquote";
-@import "components/progress";
+@import "layout/social";

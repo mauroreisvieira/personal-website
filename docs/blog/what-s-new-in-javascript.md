@@ -23,6 +23,44 @@ counter.value(); // Output: 1;
 
 From the **Counter** class, the `#counter` value is private.\
 If we try to access the `#counter`, then syntax error will be shown.
+From the **Counter** class, the `#counter` value is private.\
+If we try to access the `#counter`, then syntax error will be shown.
+
+
+### Rest/Spread Properties
+
+The rest operator `...` copies the remaining property keys that were not mentioned. Let's look at an example:
+
+```js
+const values = {a: 1, b: 2, c: 3, d: 4};
+const {a, ...n} = values;
+console.log(a);   // prints 1
+console.log(n);   // prints {b: 2, c: 3, d: 4}
+````
+
+### Asynchronous Iteration
+
+Now we can use `await` on our loops declarations.
+
+```js
+for await (const line of readLines(filePath)) {
+  console.log(line);
+}
+```
+
+### Regular Expression
+
+JavaScript regular expressions can return a match object — an array-like value containing matched strings.
+For example, to parse a date in YYYY-MM-DD format:
+
+```js
+const
+  reDate = /([0-9]{4})-([0-9]{2})-([0-9]{2})/,
+  match  = reDate.exec('2019-05-21'),
+  year   = match[1], // 2019
+  month  = match[2], // 05
+  day    = match[3]; // 21
+````
 
 ### Array Flat
 

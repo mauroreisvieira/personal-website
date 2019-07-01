@@ -1,23 +1,22 @@
 .hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  height: calc(60vh);
-  padding: var(--space-sm);
+  min-height: 62vh;
   text-align: center;
 
   @include tablet {
-    min-height: 60vh;
-    padding: var(--space-x-hg);
+    padding: $theme-baseline * 4;
   }
 
   &__title {
     word-break: break-word;
+    margin: 0;
   }
 
-  &__date {
-    color: var(--color-grayscale-light);
+  &__publish {
+    color: color(grayscale, 300);
     text-transform: uppercase;
   }
 }

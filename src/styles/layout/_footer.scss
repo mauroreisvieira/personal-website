@@ -1,16 +1,19 @@
-footer.footer {
+.footer {
   display: flex;
   flex-direction: column;
-  margin-top: calc(var(--space-x-hg) * 2);
+  margin-top: $theme-baseline * 12;
+  padding: $theme-baseline * 3;
+  background: color(primary);
 
   @include tablet {
-    justify-content: space-between;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   p {
-    margin-bottom: 0;
-    color: var(--color-grayscale-light);
+    color: color(primary, 100);
+    font-size: size(sm);
     text-align: center;
 
     @include tablet {

@@ -1,9 +1,3 @@
 .btn {
-  margin-top: var(--space-xs);
-
-  &--accent {
-    &:hover {
-      color: #fff;
-    }
-  }
+  background-color: color(primary);
 }

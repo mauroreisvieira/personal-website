@@ -1,34 +1,32 @@
 /* stylelint-disable selector-max-type, selector-no-qualifying-type */
 code[class*="language-"],
 pre[class*="language-"] {
-  margin: var(--space-lg) calc(var(--space-sm) * -1);
-  color: var(--color-grayscale-lighter);
+  margin: $theme-baseline * 2 $theme-baseline * -3;
+  padding: $theme-baseline * 3;
+  border-radius: 0;
   background: none;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  font-size: 1em;
+  color: color(grayscale, 300);
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: size(sm);
+  line-height: 1.5;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-wrap: normal;
-  line-height: 1.5;
   tab-size: 4;
   hyphens: none;
 
   @include tablet {
-    margin: var(--space-xl) 0;
+    margin: $theme-baseline * 2 0;
   }
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-  text-shadow: none;
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
   background: #b3d4fc;
-}
-
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
-  background: #b3d4fc;
 }
 
 @media print {
@@ -46,10 +44,9 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: var(--color-grayscale-darker);
+  background: color(grayscale, 700);
 }
 
-/* Inline code */
 :not(pre) > code[class*="language-"] {
   padding: .1em;
   border-radius: .3em;
@@ -106,7 +103,7 @@ pre[class*="language-"] {
 
 .token.function,
 .token.class-name {
-  color: #DD4A68;
+  color: #dd4a68;
 }
 
 .token.regex,
@@ -119,6 +116,7 @@ pre[class*="language-"] {
 .token.bold {
   font-weight: bold;
 }
+
 .token.italic {
   font-style: italic;
 }
@@ -128,6 +126,6 @@ pre[class*="language-"] {
 }
 
 .hljs {
-  font-size: var(--typography-sm) !important;
-  line-height: var(--typography-xl) !important;
+  font-size: size(sm);
+  line-height: size(lg);
 }

@@ -1,5 +1,29 @@
-@mixin breakpoint($breakpoint: 740px) {
-  @media (max-width: $breakpoint) {
+@mixin mobile($breakpoint: sm) {
+  @if not map-has-key($theme-breakpoints, $breakpoint) {
+    @error "Invalid style specified! #{$breakpoint} doesn't exist. Choose one of #{map-keys($theme-breakpoints)}";
+  }
+
+  @media (min-width: map-get($theme-breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin tablet($breakpoint: md) {
+  @if not map-has-key($theme-breakpoints, $breakpoint) {
+    @error "Invalid style specified! #{$breakpoint} doesn't exist. Choose one of #{map-keys($theme-breakpoints)}";
+  }
+
+  @media (min-width: map-get($theme-breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin desktop($breakpoint: lg) {
+  @if not map-has-key($theme-breakpoints, $breakpoint) {
+    @error "Invalid style specified! #{$breakpoint} doesn't exist. Choose one of #{map-keys($theme-breakpoints)}";
+  }
+
+  @media (min-width: map-get($theme-breakpoints, $breakpoint)) {
     @content;
   }
 }

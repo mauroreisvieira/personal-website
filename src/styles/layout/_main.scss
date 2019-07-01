@@ -1,12 +1,14 @@
-main {
+.main {
+  padding: 0 $theme-baseline * 3;
+}
 
-  a {
-    font-size: var(--typography-lg);
-  }
+.container {
+  width: 100%;
+  max-width: 940px;
+  max-width: map-get($theme-breakpoints, xl);
+  margin: auto;
 
-  p,
-  li {
-    font-size: var(--typography-lg);
-    line-height: var(--typography-x-xl);
+  &--sm {
+    max-width: map-get($theme-breakpoints, md);
   }
 }

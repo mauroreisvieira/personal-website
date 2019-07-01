@@ -6,30 +6,35 @@ For the past six years, I've always been enjoying to experiment new technologies
 
 I believe in open-source and collaboration over competition, also I love sharing my knowledge and experience with others.
 
-## Experience
+### Experience
 
 **Front End Developer** − [Namecheap](https://www.namecheap.com/)\
 _October 2017 – Present_
 
-**Front End Developer** − [Hi INTERACTIVE](http://www.hi-interactive.pt/)\
+**Full Stack Developer** − [Hi INTERACTIVE](http://www.hi-interactive.pt/)\
 _May 2016 – October 2017_
 
 **Web Developer** − [WayAcross](https://www.wayacross.pt/)\
 _April 2014 – May 2016_
 
 
-## Focus
+### Focus
 
-**Front End Development**
- - Vanilla Javascript & Vue.js
+#### Life
+- Family & Friend
+
+#### Front End Development
  - CSS Animations
+ - Vanilla Javascript & Vue.js
+ - Mobile & Responsive Design
  - Performance & Accessibility
 
-**Back End Development**
+#### Back End Development
 - Node.js
 - PHP
 
+---
 
-Drop me a line if you want to say _"Hello"_ or have a beer, I will be very happy to hear from you.
+Drop me a line if you want to say Hi or have a beer, I will be very happy to hear from you.
 
 [Let's Talk](mailto:mauroreivieira@gmail.com)

@@ -1,16 +1,16 @@
+/* stylelint-disable selector-max-type */
 code {
   display: inline-block;
   max-width: 100%;
-  background-color: var(--color-accent-lighter);
-  border-radius: var(--radius-xs);
-  margin-bottom: var(--space-x-xs);
-  vertical-align: middle;
-  font-size: var(--typography-sm);
-  line-height: 1;
+  margin-bottom: 2px;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: color(accent, 200);
+  color: color(accent, 800);
+  font-family: monospace;
+  font-size: size(sm);
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: var(--color-accent-base);
-  padding: var(--space-xs) var(--space-x-sm);
-  font-family: monospace;
   overflow: hidden;
+  vertical-align: middle;
 }
