@@ -3,11 +3,11 @@
     <router-link :to="path"></router-link>
     <figure v-lazyload class="article__picture">
       <ImageSpinner
-      class="image__spinner"
+        class="image__spinner"
       />
       <img
-      :data-url="this.static(picture)"
-      :alt="title" />
+        :data-url="this.static(picture)"
+        :alt="title" />
     </figure>
     <aside class="article__content">
       <h3 class="article__title">{{ title }}</h3>

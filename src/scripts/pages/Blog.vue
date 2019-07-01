@@ -35,11 +35,10 @@
 
 .grid {
   display: grid;
+  padding: $theme-baseline 0;
   grid-gap: $theme-baseline * 10;
   grid-template-columns: repeat(1, auto);
   grid-auto-rows: auto;
-  padding: $theme-baseline 0;
-
 
   @include tablet {
     grid-template-columns: repeat(2, auto);
