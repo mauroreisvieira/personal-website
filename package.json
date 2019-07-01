@@ -1,11 +1,11 @@
 {
-	"name": "me",
+	"name": "website",
 	"version": "1.0.0",
 	"description": "My personal website",
 	"license": "MIT",
-	"homepage": "https://github.com/mauroreisvieira/me",
+	"homepage": "https://github.com/mauroreisvieira/website",
 	"author": "Mauro Reis Vieira <mauroreisvieira@gmail.com>",
-	"repository": "https://github.com/mauroreisvieira/me",
+	"repository": "https://github.com/mauroreisvieira/website",
 	"scripts": {
 		"serve": "vue-cli-service serve",
 		"build": "vue-cli-service build",

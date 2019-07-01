@@ -20,3 +20,10 @@
         }
     }
 </script>
+<style lang="scss" scoped>
+@import "./../../styles/theme.scss";
+
+.main {
+  padding: 0 $theme-baseline * 3;
+}
+</style>
