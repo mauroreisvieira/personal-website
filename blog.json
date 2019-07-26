@@ -1,5 +1,6 @@
 [
     {
+        "visible": false,
         "path": "/speech-synthesis-api",
         "date": "2019-06-21",
         "author": "Mauro Reis Vieira",
@@ -8,6 +9,7 @@
         "description": "The Speech Synthesis API is an awesome API, great to experiment new kind of interfaces and let the browser talk to you"
     },
     {
+        "visible": true,
         "path": "/what-s-new-in-javascript",
         "date": "2019-05-21",
         "author": "Mauro Reis Vieira",
@@ -16,6 +18,7 @@
         "description": "Many of us know that there is a standard procedure for Javascript latest releases and a committee behind that. In this post, I will explain about who makes the final call on any new specification, what is the procedure for it, and what's new in ES2019."
     },
     {
+        "visible": true,
         "path": "/how-i-work",
         "date": "2019-05-10",
         "author": "Mauro Reis Vieira",
@@ -24,6 +27,7 @@
         "description": "I’ve seen a few people share their work setups / processes lately, so I thought I would do the same."
     },
     {
+        "visible": true,
         "path": "/sublime-text-3-tips",
         "date": "2019-04-16",
         "author": "Mauro Reis Vieira",

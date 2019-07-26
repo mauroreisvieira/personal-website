@@ -1,20 +1,20 @@
 <template>
-    <progress class="progress" :value="value" :max="max"></progress>
+  <progress class="progress" :value="value" :max="max"></progress>
 </template>
 
 <script>
-    export default {
-        props: {
-            max: {
-                type: Number,
-                required: true
-            },
-            value: {
-                type: Number,
-                required: true
-            },
-        }
+export default {
+  props: {
+    max: {
+      type: Number,
+      required: true
+    },
+    value: {
+      type: Number,
+      required: true
     }
+  }
+};
 </script>
 <style lang="scss">
 @import "./../../styles/theme.scss";
@@ -40,5 +40,3 @@
   background-color: color(accent);
 }
 </style>
-
-

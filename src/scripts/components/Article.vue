@@ -2,17 +2,13 @@
   <article class="article">
     <router-link :to="path"></router-link>
     <figure v-lazyload class="article__picture">
-      <ImageSpinner
-        class="image__spinner"
-      />
-      <img
-        :data-url="this.static(picture)"
-        :alt="title" />
+      <ImageSpinner class="image__spinner" />
+      <img :data-url="this.static(picture)" :alt="title" />
     </figure>
     <aside class="article__content">
       <h3 class="article__title">{{ title }}</h3>
       <p class="article__description">{{ description }}</p>
-      <hr>
+      <hr />
       <h6 class="article__author">{{ author }}</h6>
       <h6 class="article__caption">{{ datetime }} / 30min</h6>
     </aside>
@@ -20,49 +16,48 @@
 </template>
 
 <script>
-  import { Utils } from '../helpers/Utils.js'
-  import ImageSpinner from "./ImageSpinner";
-  export default {
-    components: { ImageSpinner },
-    data: function () {
-      return {
-        datetime: Utils.formatDate(this.date)
-      }
+import { Utils } from "../helpers/Utils.js";
+import ImageSpinner from "./ImageSpinner";
+export default {
+  components: { ImageSpinner },
+  data: function() {
+    return {
+      datetime: Utils.formatDate(this.date)
+    };
+  },
+  props: {
+    path: {
+      type: String,
+      required: true
     },
-    props: {
-      path: {
-        type: String,
-        required: true
-      },
-      title: {
-        type: String,
-        required: true
-      },
-      picture: {
-        type: String,
-        required: true
-      },
-      description: {
-        type: String,
-        required: true
-      },
-      author: {
-        type: String,
-        required: true
-      },
-      date: {
-        type: String,
-        required: true
-      }
+    title: {
+      type: String,
+      required: true
     },
-    methods: {
-      static(image) {
-        return require('@/statics/blog/' + image);
-      },
+    picture: {
+      type: String,
+      required: true
     },
-    mounted() {}
-  }
-
+    description: {
+      type: String,
+      required: true
+    },
+    author: {
+      type: String,
+      required: true
+    },
+    date: {
+      type: String,
+      required: true
+    }
+  },
+  methods: {
+    static(image) {
+      return require("@/statics/blog/" + image);
+    }
+  },
+  mounted() {}
+};
 </script>
 
 <style lang="scss">
@@ -77,7 +72,7 @@
   overflow: hidden;
 
   &:hover {
-    opacity: .6;
+    opacity: 0.6;
   }
 
   a {
