@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <p>Copyright © 2019 Mauro Reis Vieira</p>
+        <p>Copyright © {{ new Date().getFullYear() }} Mauro Reis Vieira</p>
         <Social />
     </footer>
 </template>

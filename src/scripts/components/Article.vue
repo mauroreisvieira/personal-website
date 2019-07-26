@@ -11,9 +11,9 @@
     </figure>
     <aside class="article__content">
       <h3 class="article__title">{{ title }}</h3>
-      <p>{{ description }}</p>
+      <p class="article__description">{{ description }}</p>
       <hr>
-      <h6 class="article__author">Mauro Reis Vieira, @Namecheap</h6>
+      <h6 class="article__author">{{ author }}</h6>
       <h6 class="article__caption">{{ datetime }} / 30min</h6>
     </aside>
   </article>
@@ -43,6 +43,10 @@
         required: true
       },
       description: {
+        type: String,
+        required: true
+      },
+      author: {
         type: String,
         required: true
       },
@@ -113,6 +117,10 @@
     width: $theme-baseline * 4;
     margin: $theme-baseline * 4 0;
     background-color: color(accent);
+  }
+
+  &__description {
+    margin-bottom: 0;
   }
 
   &__caption,

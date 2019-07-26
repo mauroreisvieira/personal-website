@@ -2,10 +2,12 @@
     <main class="main container container--sm">
         <Progress :max="max" :value="value" />
         <Hero
-            :title="title"
-            :date="date"
-            />
-        <img :src="picture" alt="" />
+        :title="title"
+        :date="date"
+        />
+        <picture>
+            <img  class="detail__picture" :src="picture" alt="" />
+        </picture>
         <Page :path="path" />
         <Navigation />
     </main>
@@ -37,12 +39,8 @@
         mounted() {
             this.current = this.data.findIndex(e => e.path === this.$router.currentRoute.path);
             const { date, picture } = this.data[this.current];
-            console.log(date);
-            console.log(picture);
             this.date = Utils.formatDate(date);
             this.picture = this.static(picture);
-
-            console.log(this.picture);
 
             window.addEventListener('resize', () => {
                 this.max = this.$el.clientHeight - (screen.height / 2);
@@ -65,3 +63,14 @@
         }
     }
 </script>
+<style lang="scss">
+/* stylelint-disable selector-max-type */
+@import "./../../styles/theme.scss";
+
+.detail {
+  &__picture {
+    width: 100%;
+    margin-bottom: $theme-baseline * 2;
+  }
+}
+</style>

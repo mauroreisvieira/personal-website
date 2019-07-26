@@ -9,6 +9,7 @@
         :picture="item.picture"
         :title="item.title"
         :description="item.description"
+        :author="item.author"
         :date="item.date" />
     </section>
   </main>
@@ -26,7 +27,8 @@
       return {
         list: Blog
       }
-    }
+    },
+    mounted() {}
   }
 </script>
 
