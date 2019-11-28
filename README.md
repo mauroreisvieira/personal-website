@@ -1,4 +1,4 @@
-# my suepr sfd ds Website
+# My Personal Website
 
 ## Project setup
 
