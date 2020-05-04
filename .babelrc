@@ -1,0 +1,8 @@
+{
+  "env": {
+    "test": {
+      "presets": [["preact-cli/babel", { "modules": "commonjs" }]]
+    }
+  },
+  "plugins": [["@babel/plugin-transform-react-jsx", { "pragma": "preact.h" }]]
+}

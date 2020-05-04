@@ -1,53 +1,43 @@
 {
-    "name": "website",
-    "version": "1.0.0",
-    "description": "My personal website",
+    "name": "personal-website",
+    "version": "2.0.0",
     "license": "MIT",
-    "homepage": "https://github.com/mauroreisvieira/website",
+    "homepage": "https://github.com/mauroreisvieira/personal-website",
     "author": "Mauro Reis Vieira <mauroreisvieira@gmail.com>",
-    "repository": "https://github.com/mauroreisvieira/website",
+    "repository": "https://github.com/mauroreisvieira/personal-website",
     "scripts": {
-        "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build && cp -a docs app",
-        "lint": "vue-cli-service lint",
-        "test": "echo \"Warning: no test specified\" && exit 0"
+        "build": "preact build",
+        "serve": "sirv build --cors --single",
+        "dev": "preact watch",
+        "lint": "eslint src"
     },
-    "dependencies": {
-        "core-js": "^2.6.5",
-        "vue": "^2.6.10",
-        "vue-router": "^3.0.6",
-        "vuex": "^3.1.1"
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
     },
     "devDependencies": {
-        "@vue/cli-plugin-babel": "^3.8.0",
-        "@vue/cli-plugin-eslint": "^3.8.0",
-        "@vue/cli-service": "^3.8.0",
-        "babel-eslint": "^10.0.1",
-        "eslint": "^5.16.0",
-        "eslint-plugin-vue": "^5.0.0",
-        "vue-template-compiler": "^2.6.10",
-        "sass": "^1.18.0",
-        "sass-loader": "^7.1.0",
-        "remarkable": "^1.7.1",
+        "@babel/plugin-transform-react-jsx": "^7.9.4",
+        "@commitlint/cli": "^8.3.5",
+        "@commitlint/config-conventional": "^8.3.4",
+        "babel-eslint": "^10.0.3",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.9.0",
+        "eslint-plugin-jest": "^23.2.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-react": "^7.17.0",
+        "husky": "^4.2.5",
+        "identity-obj-proxy": "^3.0.0",
+        "preact-cli": "^3.0.0-rc.6",
+        "preact-render-spy": "^1.2.1",
+        "prettier": "^1.19.1",
         "prismjs": "^1.15.0",
-        "stylelint": "^7.8.0",
-        "stylelint-config-standard": "^16.0.0",
-        "stylelint-order": "^0.5.0",
-        "stylelint-scss": "^1.4.1",
-        "stylelint-selector-bem-pattern": "^2.0.0"
+        "remarkable": "^1.7.1",
+        "sirv-cli": "^0.4.5"
     },
-    "eslintConfig": {
-        "root": true,
-        "env": {
-            "node": true
-        },
-        "extends": [
-            "plugin:vue/essential",
-            "eslint:recommended"
-        ],
-        "rules": {},
-        "parserOptions": {
-            "parser": "babel-eslint"
-        }
+    "dependencies": {
+        "preact": "^10.3.2",
+        "preact-render-to-string": "^5.1.4",
+        "preact-router": "^3.2.1"
     }
 }

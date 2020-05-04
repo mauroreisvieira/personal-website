@@ -7,11 +7,10 @@ Thumbs.db
 *.code-workspace
 .vscode/
 .idea/
-.editorconfig
 
 # Generated folders
 node_modules/
-app/
+.rpt2_cache
 
 # Generated files
 package-lock.json

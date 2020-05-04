@@ -1,32 +1,20 @@
-# My Personal Website
+# Personal Website
 
-## Project setup
+## CLI Commands
 
-```
-yarn install
-```
+``` bash
+# install dependencies
+npm install
 
-### Compiles and hot-reloads for development
+# serve with hot reload at localhost:8080
+npm run dev
 
-```bash
-yarn run serve
+# build for production with minification
+npm run build
 
-```
+# test the production build locally
+npm run serve
 
-### Compiles and minifies for production
-
-```bash
-yarn run build
-```
-
-Run your tests
-
-```bash
-yarn run test
-```
-
-Lints and fixes files
-
-```bash
-yarn run lint
+# run tests with jest and preact-render-spy
+npm run test
 ```
