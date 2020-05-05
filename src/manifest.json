@@ -1,6 +1,6 @@
 {
-  "name": "personal-website",
-  "short_name": "personal-website",
+  "name": "my-project",
+  "short_name": "my-project",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",

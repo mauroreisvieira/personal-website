@@ -7,7 +7,6 @@
     "repository": "https://github.com/mauroreisvieira/personal-website",
     "scripts": {
         "build": "preact build",
-        "serve": "sirv build --cors --single",
         "dev": "preact watch",
         "lint": "eslint src"
     },
@@ -17,27 +16,24 @@
         }
     },
     "devDependencies": {
-        "@babel/plugin-transform-react-jsx": "^7.9.4",
         "@commitlint/cli": "^8.3.5",
         "@commitlint/config-conventional": "^8.3.4",
-        "babel-eslint": "^10.0.3",
-        "eslint": "^6.8.0",
-        "eslint-config-prettier": "^6.9.0",
-        "eslint-plugin-jest": "^23.2.0",
-        "eslint-plugin-prettier": "^3.1.2",
-        "eslint-plugin-react": "^7.17.0",
+        "eslint": "^6.0.1",
+        "eslint-config-preact": "^1.1.0",
         "husky": "^4.2.5",
         "identity-obj-proxy": "^3.0.0",
         "preact-cli": "^3.0.0-rc.6",
         "preact-render-spy": "^1.2.1",
-        "prettier": "^1.19.1",
+        "prettier": "^2.0.5",
         "prismjs": "^1.15.0",
-        "remarkable": "^1.7.1",
+        "remarkable": "^2.0.0",
         "sirv-cli": "^0.4.5"
     },
     "dependencies": {
         "preact": "^10.3.2",
         "preact-render-to-string": "^5.1.4",
-        "preact-router": "^3.2.1"
+        "preact-router": "^3.2.1",
+        "preact-cli-postcss": "^1.1.1",
+        "tailwindcss": "^1.4.0"
     }
 }

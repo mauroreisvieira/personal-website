@@ -11,9 +11,11 @@ Thumbs.db
 # Generated folders
 node_modules/
 .rpt2_cache
+build
 
 # Generated files
 package-lock.json
 npm-debug
 yarn.lock
 yarn-error.log
+size-plugin.json
